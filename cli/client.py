@@ -70,3 +70,5 @@ if __name__ == '__main__':
 		headers={'content-type': 'application/json'},
 		data=json.dumps(transactions)
 	)
+
+	print('{}: {}'.format(request.status_code, request.text))
