@@ -1,5 +1,5 @@
 """
-ASGI config for day_trading_system project.
+ASGI config for transaction_server project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'day_trading_system.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'transaction_server.settings')
 
 application = get_asgi_application()
