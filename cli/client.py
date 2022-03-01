@@ -64,11 +64,11 @@ if __name__ == '__main__':
 			sys.exit('invalid command on line: {line_number}'.format(line_number))
 
 		transactions.append(transaction)
-	
+
 	request = requests.post(
 		server_url,
 		headers={'content-type': 'application/json'},
 		data=json.dumps(transactions)
 	)
-
+	
 	print('{}: {}'.format(request.status_code, request.text))
