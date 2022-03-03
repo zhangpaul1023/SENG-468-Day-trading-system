@@ -12,6 +12,16 @@ class UncommittedBuy(models.Model):
 	stock_symbol = models.CharField(max_length=50)
 	funds = models.IntegerField()
 	timestamp = models.DateTimeField()
+class UncommittedSell(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	stock_symbol = models.CharField(max_length=50)
+	funds = models.IntegerField()
+	timestamp = models.DateTimeField()
+
+class StockAccount(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	stock_symbol = models.CharField(max_length=50)
+	amount = models.IntegerField()
 
 # Create your models here.
 class Event(models.Model):

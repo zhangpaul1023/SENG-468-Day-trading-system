@@ -9,7 +9,7 @@ from json import loads
 
 from .models import *
 
-import datetime
+from datetime import datetime, timezone
 
 # Create your views here.
 @csrf_exempt
@@ -52,12 +52,47 @@ class UserManager:
 	def get_funds(self):
 		return self.user.funds
 	def uncommit_buy(self, stock_symbol, amount):
-		self.user.funds -= amount
+		# quote_server = QuoteServer()
+		# quote = quote_server.get_quote(self.user.userid, stock_symbol)
+		try:
+			buy = UncommittedBuy.objects.get(user=self.user)
+			buy.delete()
+		except UncommittedBuy.DoesNotExist:
+			pass
+		buy = UncommittedBuy(user=self.user, stock_symbol=stock_symbol, funds=amount, timestamp=datetime.now())
+		buy.save()
+	def has_recent_buy(self):
+		try:
+			buy = UncommittedBuy.objects.get(user=self.user)
+			buy_timestamp = buy.timestamp
+			current_time = datetime.now(timezone.utc)
+			time_difference = current_time - buy_timestamp
+			return time_difference.total_seconds() < 60
+		except UncommittedBuy.DoesNotExist:
+			return False
+	def commit_buy(self):
+		buy = UncommittedBuy.objects.get(user=self.user)
+		try:
+			stock_account = StockAccount.objects.get(user=self.user,stock_symbol=buy.stock_symbol)
+		except StockAccount.DoesNotExist:
+			stock_account = StockAccount(user=self.user,stock_symbol=buy.stock_symbol,amount=0)
+		self.user.funds -= buy.funds
 		self.user.save()
 		quote_server = QuoteServer()
-		quote = quote_server.get_quote(self.user.userid, stock_symbol)
-		buy = UncommittedBuy(user=self.user, stock_symbol=stock_symbol, funds=(amount*100)/quote, timestamp=datetime.datetime.now())
-		buy.save()
+		quote = quote_server.get_quote(self.user.userid, buy.stock_symbol)
+		stock_account.amount += (buy.funds * 100)/quote
+
+		buy.delete()
+		stock_account.save()
+	def cancel_buy(self):
+		try:
+			buy = UncommittedBuy.objects.get(user=self.user)
+			buy.delete()
+		except UncommittedBuy.DoesNotExist:
+			pass
+
+		
+		
 
 
 
@@ -80,4 +115,18 @@ def buy(request, userid, stock_symbol, amount):
 	else:
 		user.uncommit_buy(stock_symbol, amount)
 		return HttpResponse("created uncommitted buy.")
+
+
+def commit_buy(request, userid):
+	user = UserManager(userid)
+	if not user.has_recent_buy():
+		# display error
+		return HttpResponse("no uncommitted buy.")
+	else:
+		user.commit_buy()
+		return HttpResponse("committed buy.")
+def cancel_buy(request, userid):
+	user = UserManager(userid)
+	user.cancel_buy()
+	return HttpResponse("cancelled uncommitted, if any.")
 

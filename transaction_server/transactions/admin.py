@@ -5,3 +5,6 @@ from .models import *
 
 admin.site.register(User)
 admin.site.register(UncommittedBuy)
+admin.site.register(UncommittedSell)
+admin.site.register(StockAccount)
+
