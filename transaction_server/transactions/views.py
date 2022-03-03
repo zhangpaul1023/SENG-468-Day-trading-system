@@ -3,7 +3,7 @@ from pydoc import ModuleScanner
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-
+import socket
 from socket import gethostname
 from json import loads
 
@@ -39,9 +39,32 @@ def workload(request):
 
 class QuoteServer:
 	def __init__(self):
-		pass
-	def get_quote(self, userid, stock_symbol):
-		return 100
+		self.price = ""
+		self.quoteServerTime = ""
+		self.cryptokey = ""
+
+	def connect_quote(self, userid, stock_symbol):
+		HOST = '192.168.4.2'
+		PORT = 4444
+		dataSend = userid+stock_symbol+"\n"
+		dataSend = str.encode(dataSend)
+		with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
+			s.connect((HOST, PORT))
+			s.sendall(dataSend)
+			data = s.recv(1024)
+
+		receivedData = repr(data)
+		receivedData = receivedData[1:].replace("'", "")
+		data = receivedData.split(",")
+		self.price = data[0]
+		self.quoteServerTime = data[3]
+		self.cryptokey = data[4]
+	def get_price(self):
+		return int(self.price)
+	def get_quoteServerTime(self):
+		return self.quoteServerTime
+	def get_cryptokey(self):
+		return self.cryptokey
 
 class UserManager:
 	def __init__(self, userid):
@@ -129,7 +152,7 @@ class UserManager:
 		self.user.funds -= buy.funds
 		self.user.save()
 		quote_server = QuoteServer()
-		quote = quote_server.get_quote(self.user.userid, buy.stock_symbol)
+		quote = quote_server.get_price()
 		stock_account.amount += (buy.funds * 100)/quote
 
 		buy.delete()
@@ -144,7 +167,7 @@ class UserManager:
 		self.user.funds += sell.funds
 		self.user.save()
 		quote_server = QuoteServer()
-		quote = quote_server.get_quote(self.user.userid, sell.stock_symbol)
+		quote = quote_server.get_price()
 		stock_account.amount -= (sell.funds * 100)/quote
 
 		sell.delete()
@@ -170,7 +193,7 @@ class UserManager:
 		except StockAccount.DoesNotExist:
 			stock_account = StockAccount(user=self.user,stock_symbol=stock_symbol,amount=0)
 		quote_server = QuoteServer()
-		quote = quote_server.get_quote(self.user.userid, stock_symbol)
+		quote = quote_server.get_price()
 		return stock_account.amount * quote
 
 	def has_set_buy(self, stock_symbol):
@@ -305,4 +328,3 @@ def cancel_set_sell(request, userid, stock_symbol):
 	else:
 		user.cancel_set_sell(stock_symbol)
 		return HttpResponse('cancelled sell trigger')
-
