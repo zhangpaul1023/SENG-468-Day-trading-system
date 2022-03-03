@@ -170,8 +170,8 @@ class UserManager:
 		except StockAccount.DoesNotExist:
 			stock_account = StockAccount(user=self.user,stock_symbol=stock_symbol,amount=0)
 		quote_server = QuoteServer()
-		quote = quote_server.get_quote(self.user.userid, sell.stock_symbol)
-		return stock_symbol.amount * quote
+		quote = quote_server.get_quote(self.user.userid, stock_symbol)
+		return stock_account.amount * quote
 
 	def has_set_buy(self, stock_symbol):
 		try:
