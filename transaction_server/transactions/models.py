@@ -1,9 +1,15 @@
+from argparse import ONE_OR_MORE
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.signals import pre_save
 
-# Create your models here.
-class Event(models.Model):
+class UserAccount(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+
+# Every command must be associated with a transactions.
+# There is a 1:1 relationship between transactions and commands.
+# Each transaction may create multiple system Transactions.
+class Transaction(models.Model):
 	class Command(models.TextChoices):
 		ADD = 'ADD'
 		QUOTE = 'QUOTE'
@@ -21,100 +27,109 @@ class Event(models.Model):
 		CANCEL_SET_SELL = 'CANCEL_SET_SELL'
 		DUMPLOG = 'DUMPLOG'
 		DISPLAY_SUMMARY = 'DISPLAY_SUMMARY'
-	
-	class Author(models.TextChoices):
-		SYSTEM = 'SYSTEM'
-		USER = 'USER'
 
-	event_type = models.CharField(choices=Author.choices, max_length=6)
-	transaction_number = models.AutoField(primary_key=True)
 	timestamp = models.DateTimeField(auto_now_add=True)
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
-
-class AddCommand(Event):
-	command = Event.Command.ADD
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
-
-class QuoteCommand(Event):
-	command = Event.Command.QUOTE
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	
+	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
+	amount = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 
-class BuyCommand(Event):
-	command = Event.Command.BUY
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
-class SellCommand(Event):
-	command = Event.Command.SELL
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class AddCommand(Transaction):
+# 	command = Transaction.Command.ADD
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
 
-class CommitBuyCommand(Event):
-	command = Event.Command.COMMIT_BUY
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-class CommitSellCommand(Event):
-	command = Event.Command.COMMIT_SELL
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+# class QuoteCommand(Transaction):
+# 	command = Transaction.Command.QUOTE
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
 
-class CancelBuyCommand(Event):
-	command = Event.Command.CANCEL_BUY
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-class CancelSellCommand(Event):
-	command = Event.Command.CANCEL_SELL
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+# class BuyCommand(Transaction):
+# 	command = Transaction.Command.BUY
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class SellCommand(Transaction):
+# 	command = Transaction.Command.SELL
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
 
-class SetBuyAmountCommand(Event):
-	command = Event.Command.SET_BUY_AMOUNT
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
-class SetSellAmountCommand(Event):
-	command = Event.Command.SET_SELL_AMOUNT
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class CommitBuyCommand(Transaction):
+# 	command = Transaction.Command.COMMIT_BUY
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# class CommitSellCommand(Transaction):
+# 	command = Transaction.Command.COMMIT_SELL
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 
-class CancelSetBuyCommand(Event):
-	command = Event.Command.CANCEL_BUY
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-class CancelSetSellCommand(Event):
-	command = Event.Command.CANCEL_SELL
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
+# class CancelBuyCommand(Transaction):
+# 	command = Transaction.Command.CANCEL_BUY
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# class CancelSellCommand(Transaction):
+# 	command = Transaction.Command.CANCEL_SELL
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 
-class SetBuyTriggerCommand(Event):
-	command = Event.Command.SET_BUY_TRIGGER
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
-class SetSellTriggerCommand(Event):
-	command = Event.Command.SET_SELL_TRIGGER
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class SetBuyAmountCommand(Transaction):
+# 	command = Transaction.Command.SET_BUY_AMOUNT
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class SetSellAmountCommand(Transaction):
+# 	command = Transaction.Command.SET_SELL_AMOUNT
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
 
-class DumplogCommand(Event):
-	command = Event.Command.DUMPLOG
-	user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
-	filename = models.CharField(max_length=64, null=True)
+# class CancelSetBuyCommand(Transaction):
+# 	command = Transaction.Command.CANCEL_BUY
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# class CancelSetSellCommand(Transaction):
+# 	command = Transaction.Command.CANCEL_SELL
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
 
-class DisplaySummaryCommand(Event):
-	command = Event.Command.DISPLAY_SUMMARY
-	user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
+# class SetBuyTriggerCommand(Transaction):
+# 	command = Transaction.Command.SET_BUY_TRIGGER
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
+# class SetSellTriggerCommand(Transaction):
+# 	command = Transaction.Command.SET_SELL_TRIGGER
+# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+# 	stock_symbol = models.CharField(max_length=3, null=True)
+# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
+
+# class DumplogCommand(Transaction):
+# 	command = Transaction.Command.DUMPLOG
+# 	user_account = models.ForeignKey(UserAccount, null=True, on_delete=models.CASCADE)
+# 	filename = models.CharField(max_length=64, null=True)
+
+# class DisplaySummaryCommand(Transaction):
+# 	command = Transaction.Command.DISPLAY_SUMMARY
+# 	user_account = models.ForeignKey(UserAccount, null=True, on_delete=models.CASCADE)
 
 class AccountTransaction(models.Model):
 	class Action(models.TextChoices):
 		ADD = 'ADD'
 		REMOVE = 'REMOVE'
 	
-	transaction_number = models.AutoField(primary_key=True)
+	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE, primary_key=True)
 	timestamp = models.DateTimeField(auto_now_add=True)
 	server = models.CharField(max_length=64)
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 	actions = models.CharField(choices=Action.choices, max_length=6)
 	funds = models.DecimalField(decimal_places=2, max_digits=24)
+
+class SystemEvent(models.Model):
+	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
+
+class ErrorEvent(models.Model):
+	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
+	error_message = models.CharField(max_length=512)
+
+class DebugEvent(models.Model):
+	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
+	debug_message = models.CharField(max_length=512)

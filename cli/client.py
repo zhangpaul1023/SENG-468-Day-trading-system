@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
 	lines = []
 	try:
-		lines = [line.rstrip('\n') for line in open(file_name)]
+		lines = [line.rstrip(' \n') for line in open(file_name)]
 		lines = [re.sub(']\s', '],', line) for line in lines]
 	except:
 		sys.exit(
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 			transaction.update({
 				'userId': parameters[0],
 				'symbol': parameters[1],
-				'price': parameters[2]
+				'amount': parameters[2]
 			})
 		elif command == 'DUMPLOG' and len(parameters) == 1:
 			transaction.update({

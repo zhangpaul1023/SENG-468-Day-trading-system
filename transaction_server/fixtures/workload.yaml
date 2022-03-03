@@ -1,0 +1,5 @@
+- model: transactions.UserAccount
+  pk: 1
+  fields:
+    account_name: oY01WVirLr
+    cumulative_funds: 0
