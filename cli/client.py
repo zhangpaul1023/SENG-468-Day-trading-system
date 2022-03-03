@@ -71,4 +71,4 @@ if __name__ == '__main__':
 		data=json.dumps(transactions)
 	)
 	
-	print('{}: {}'.format(request.status_code, request.text))
+	print(request.text)

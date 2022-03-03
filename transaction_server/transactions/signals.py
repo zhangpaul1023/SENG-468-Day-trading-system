@@ -1,9 +1,15 @@
-from django.db.models.signals import pre_save
+from django.db.models.signals import post_save
 from django.dispatch import receiver
-from transactions.models import Transaction, SystemEvent
+from transactions.models import Transaction, LogEvent
 
-@receiver(pre_save, sender=Transaction)
-def log_transaction(sender, instance, **kwargs):
-	print("It's me, ya boi!")
-	system_event = SystemEvent(transaction=instance.transaction)
-	system_event.save()
+@receiver(post_save, sender=Transaction)
+def log_transaction(sender, **kwargs):
+	created = kwargs.get('created')
+	instance = kwargs.get('instance')
+	if created and not hasattr(instance, 'systemevent'):
+		system_event = LogEvent(
+			transaction = instance,
+			event_type = LogEvent.EventType.SYSTEM,
+			event_source = LogEvent.EventSource.USER_COMMAND,
+		)
+		system_event.save()

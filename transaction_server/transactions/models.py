@@ -31,85 +31,12 @@ class Transaction(models.Model):
 	timestamp = models.DateTimeField(auto_now_add=True)
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
-	
+
+	# Context-Dependant Fields
 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
 	amount = models.DecimalField(decimal_places=2, max_digits=24, null=True)
-
-# class AddCommand(Transaction):
-# 	command = Transaction.Command.ADD
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-
-# class QuoteCommand(Transaction):
-# 	command = Transaction.Command.QUOTE
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-
-# class BuyCommand(Transaction):
-# 	command = Transaction.Command.BUY
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-# class SellCommand(Transaction):
-# 	command = Transaction.Command.SELL
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-
-# class CommitBuyCommand(Transaction):
-# 	command = Transaction.Command.COMMIT_BUY
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# class CommitSellCommand(Transaction):
-# 	command = Transaction.Command.COMMIT_SELL
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-
-# class CancelBuyCommand(Transaction):
-# 	command = Transaction.Command.CANCEL_BUY
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# class CancelSellCommand(Transaction):
-# 	command = Transaction.Command.CANCEL_SELL
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-
-# class SetBuyAmountCommand(Transaction):
-# 	command = Transaction.Command.SET_BUY_AMOUNT
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-# class SetSellAmountCommand(Transaction):
-# 	command = Transaction.Command.SET_SELL_AMOUNT
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-
-# class CancelSetBuyCommand(Transaction):
-# 	command = Transaction.Command.CANCEL_BUY
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# class CancelSetSellCommand(Transaction):
-# 	command = Transaction.Command.CANCEL_SELL
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-
-# class SetBuyTriggerCommand(Transaction):
-# 	command = Transaction.Command.SET_BUY_TRIGGER
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-# class SetSellTriggerCommand(Transaction):
-# 	command = Transaction.Command.SET_SELL_TRIGGER
-# 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
-# 	stock_symbol = models.CharField(max_length=3, null=True)
-# 	amount = models.DecimalField(decimal_places=2, max_digits=24)
-
-# class DumplogCommand(Transaction):
-# 	command = Transaction.Command.DUMPLOG
-# 	user_account = models.ForeignKey(UserAccount, null=True, on_delete=models.CASCADE)
-# 	filename = models.CharField(max_length=64, null=True)
-
-# class DisplaySummaryCommand(Transaction):
-# 	command = Transaction.Command.DISPLAY_SUMMARY
-# 	user_account = models.ForeignKey(UserAccount, null=True, on_delete=models.CASCADE)
+	filename = models.CharField(max_length=64, null=True)
 
 class AccountTransaction(models.Model):
 	class Action(models.TextChoices):
@@ -123,13 +50,16 @@ class AccountTransaction(models.Model):
 	actions = models.CharField(choices=Action.choices, max_length=6)
 	funds = models.DecimalField(decimal_places=2, max_digits=24)
 
-class SystemEvent(models.Model):
-	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
-
-class ErrorEvent(models.Model):
-	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
-	error_message = models.CharField(max_length=512)
-
-class DebugEvent(models.Model):
-	transaction = models.OneToOneField(Transaction, on_delete=models.CASCADE)
-	debug_message = models.CharField(max_length=512)
+class LogEvent(models.Model):
+	class EventType(models.TextChoices):
+		SYSTEM = 'SYSTEM'
+		ERROR = 'ERROR'
+		DEBUG = 'DEBUG'
+	class EventSource(models.TextChoices):
+		USER_COMMAND = 'USER_COMMAND'
+		INTERSERVER_COMMUNIATION = 'INTERSERVER_COMMUNICATION'
+		TRIGGER_EXECUTION = 'TRIGGER_EXECUTION'
+	transaction = models.ForeignKey(Transaction, on_delete=models.CASCADE)
+	event_type = models.CharField(choices=EventType.choices, max_length=6)
+	event_source = models.CharField(choices=EventSource.choices, max_length=25)
+	message = models.CharField(max_length=512, null=True)

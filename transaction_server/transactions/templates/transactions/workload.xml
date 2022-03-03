@@ -1,0 +1,12 @@
+<xml>
+{% for event in log_events %}
+	{% if event.event_source == 'USER_COMMAND' %}
+	<userCommand>
+		<timestamp>{{event.transaction.timestamp}}</timestamp>
+		<server>{{event.transaction.server}}</server>
+		<transactionNum>{{event.transaction.id}}</transactionNum>
+		<command>{{event.transaction.command}}</command>
+	</userCommand
+	{% endif %}
+{% endfor %}
+</xml>
