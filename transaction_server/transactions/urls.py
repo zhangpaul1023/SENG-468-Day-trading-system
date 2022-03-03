@@ -4,5 +4,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-	path('workload', views.workload, name='workload')
+	path('workload', views.workload, name='workload'),
+	path('create_user/<slug:userid>/', views.create_user),
+	path('add/<slug:userid>/<int:amount>/', views.add),
+	path('buy/<slug:userid>/<slug:stock_symbol>/<int:amount>/', views.buy)
 ]
