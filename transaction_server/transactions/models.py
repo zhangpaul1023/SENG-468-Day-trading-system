@@ -23,6 +23,19 @@ class StockAccount(models.Model):
 	stock_symbol = models.CharField(max_length=50)
 	amount = models.IntegerField()
 
+
+class BuyTrigger(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	stock_symbol = models.CharField(max_length=50)
+	amount = models.IntegerField()
+	triggerAmount = models.IntegerField()
+
+class SellTrigger(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	stock_symbol = models.CharField(max_length=50)
+	amount = models.IntegerField()
+	triggerAmount = models.IntegerField()
+
 # Create your models here.
 class Event(models.Model):
 	class Command(models.TextChoices):
