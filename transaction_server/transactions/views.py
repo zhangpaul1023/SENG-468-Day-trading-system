@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseBadRequest, HttpResponseForbidden
 from transactions.models import LogEvent, Transaction, UserAccount
-
+import socket
 from socket import gethostname
 from json import loads
 
@@ -29,6 +29,30 @@ from json import loads
 @csrf_exempt
 def index(request):
 	return HttpResponse("This is the transaction server.")
+
+def QuoteServer(userid, stock_symbol):
+	returndata = []
+	HOST = '192.168.4.2'
+	PORT = 4444
+	dataSend = userid + stock_symbol + "\n"
+	dataSend = str.encode(dataSend)
+	with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
+		s.connect((HOST, PORT))
+	s.sendall(dataSend)
+	data = s.recv(1024)
+
+	receivedData = repr(data)
+	receivedData = receivedData[1:].replace("'", "")
+	data = receivedData.split(",")
+	price = int(data[0])
+	quoteServerTime = int(data[3])
+	cryptokey = data[4]
+	returndata.append(price)
+	returndata.append(quoteServerTime)
+	returndata.append(cryptokey)
+	return (returndata)
+
+
 
 @csrf_exempt
 def workload(request):
@@ -69,12 +93,22 @@ def workload(request):
 				amount = command_data['amount'],
 				user_account = user_account
 			)
-		elif command in (QUOTE, CANCEL_SET_BUY, CANCEL_SET_SELL):
+		elif command in (CANCEL_SET_BUY, CANCEL_SET_SELL):
 			transaction = Transaction(
 				server = server,
 				command = command,
 				stock_symbol = command_data['symbol'],
 				user_account = user_account
+			)
+		elif command == QUOTE:
+			transaction = Transaction(
+				server=server,
+				command=command,
+				price=QuoteServer(user_account,command_data['symbol'])[0],
+				quoteServerTime=QuoteServer(user_account, command_data['symbol'])[0],
+				cryptokey=QuoteServer(user_account, command_data['symbol'])[0],
+				stock_symbol=command_data['symbol'],
+				user_account=user_account
 			)
 		elif command in (COMMIT_BUY, CANCEL_BUY, COMMIT_SELL, CANCEL_SELL, DISPLAY_SUMMARY):
 			transaction = Transaction(

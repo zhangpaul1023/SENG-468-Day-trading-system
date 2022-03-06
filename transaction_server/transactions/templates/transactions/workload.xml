@@ -10,6 +10,14 @@
 			<username>{{event.transaction.user_account.account_name}}</username>
 			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
 		</userCommand>
+		<accountTransaction>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<action>{{event.transaction.command}}</action>
+			<username>{{event.transaction.user_account.account_name}}</username>
+			<funds>{{event.transaction.amount}}</funds>}
+		</accountTransaction>>
 		{% endif %}
 		{% if event.transaction.command == 'BUY' or event.transaction.command == 'SELL' or event.transaction.command == 'SET_BUY_AMOUNT' or event.transaction.command == 'SET_SELL_AMOUNT' %}
 		<userCommand>
@@ -22,7 +30,7 @@
 			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
 		</userCommand>
 		{% endif %}
-		{% if event.transaction.command == 'QUOTE' or event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' %}
+		{% if event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' %}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -40,6 +48,27 @@
 			<command>{{event.transaction.command}}</command>
 			<username>{{event.transaction.user_account.account_name}}</username>
 		</userCommand>
+		{% endif %}
+		{% if event.transaction.command == 'QUOTE' %}
+		<quoteServer>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<price>{{event.transaction.price}}</price>
+			<stockSymbol>{{event.transaction.stock_symbol}}</stockSymbol>
+			<username>{{event.transaction.user_account.account_name}}</username>
+			<quoteServerTime>{{event.transaction.quoteServerTime}}</quoteServerTime>
+			<cryptokey>{{event.transaction.cryptokey}}</cryptokey>>
+		</quoteServer>
+		{% endif %}
+		{% if event.transaction.command == 'DUMPLOG' %}
+		<systemEvent>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<command>{{event.transaction.command}}</command>
+			<filename>{{event.transaction.filename}}</filename>
+		</systemEvent>
 		{% endif %}
 	{% endif %}
 {% endfor %}

@@ -9,6 +9,8 @@ class UserAccount(models.Model):
 # Every command must be associated with a transactions.
 # There is a 1:1 relationship between transactions and commands.
 # Each transaction may create multiple system Transactions.
+
+
 class Transaction(models.Model):
 	class Command(models.TextChoices):
 		ADD = 'ADD'
@@ -31,7 +33,9 @@ class Transaction(models.Model):
 	timestamp = models.DateTimeField(auto_now_add=True)
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
-
+	quoteServerTime = models.DecimalField(decimal_places=2, max_digits=24, null=True)
+	cryptokey = models.CharField(max_length=64, null=True)
+	price = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 	# Context-Dependant Fields
 	user_account = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
