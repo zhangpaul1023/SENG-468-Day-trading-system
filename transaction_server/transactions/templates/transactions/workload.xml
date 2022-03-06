@@ -1,12 +1,46 @@
 <xml>
 {% for event in log_events %}
 	{% if event.event_source == 'USER_COMMAND' %}
-	<userCommand>
-		<timestamp>{{event.transaction.timestamp}}</timestamp>
-		<server>{{event.transaction.server}}</server>
-		<transactionNum>{{event.transaction.id}}</transactionNum>
-		<command>{{event.transaction.command}}</command>
-	</userCommand
+		{% if event.transaction.command == 'ADD' %}
+		<userCommand>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<command>{{event.transaction.command}}</command>
+			<username>{{event.transaction.user_account.account_name}}</username>
+			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
+		</userCommand>
+		{% endif %}
+		{% if event.transaction.command == 'BUY' or event.transaction.command == 'SELL' or event.transaction.command == 'SET_BUY_AMOUNT' or event.transaction.command == 'SET_SELL_AMOUNT' %}
+		<userCommand>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<command>{{event.transaction.command}}</command>
+			<username>{{event.transaction.user_account.account_name}}</username>
+			<stockSymbol>{{event.transaction.stock_symbol}}</stockSymbol>
+			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
+		</userCommand>
+		{% endif %}
+		{% if event.transaction.command == 'QUOTE' or event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' %}
+		<userCommand>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<command>{{event.transaction.command}}</command>
+			<username>{{event.transaction.user_account.account_name}}</username>
+			<stockSymbol>{{event.transaction.stock_symbol}}</stockSymbol>
+		</userCommand>
+		{% endif %}
+		{% if event.transaction.command == 'COMMIT_BUY' or event.transaction.command == 'CANCEL_BUY' or event.transaction.command == 'COMMIT_SELL' or event.transaction.command == 'CANCEL_SELL' or event.transaction.command == 'DISPLAY_SUMMARY' %}
+		<userCommand>
+			<timestamp>{{event.transaction.timestamp}}</timestamp>
+			<server>{{event.transaction.server}}</server>
+			<transactionNum>{{event.transaction.id}}</transactionNum>
+			<command>{{event.transaction.command}}</command>
+			<username>{{event.transaction.user_account.account_name}}</username>
+		</userCommand>
+		{% endif %}
 	{% endif %}
 {% endfor %}
 </xml>
