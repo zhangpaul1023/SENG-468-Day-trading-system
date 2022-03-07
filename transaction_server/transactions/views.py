@@ -35,7 +35,7 @@ def QuoteServer(userid, stock_symbol):
 	HOST = '192.168.4.2'
 	PORT = 4444
 	dataSend = str(userid) + " " + str(stock_symbol) + "\n"
-	dataSend = str.encode(dataSend)
+	dataSend = bytes(dataSend)
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
 		s.connect((HOST, PORT))
 	s.sendall(dataSend)
@@ -104,7 +104,7 @@ def workload(request):
 			transaction = Transaction(
 				server=server,
 				command=command,
-				price=QuoteServer(user_account,command_data['symbol'])[0],
+				price=QuoteServer(user_account, command_data['symbol'])[0],
 				quoteServerTime=QuoteServer(user_account, command_data['symbol'])[1],
 				cryptokey=QuoteServer(user_account, command_data['symbol'])[2],
 				stock_symbol=command_data['symbol'],
