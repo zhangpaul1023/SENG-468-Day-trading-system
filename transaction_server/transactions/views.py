@@ -75,8 +75,6 @@ class UserManager:
 	def get_funds(self):
 		return self.user.funds
 	def uncommit_buy(self, stock_symbol, amount):
-		# quote_server = QuoteServer()
-		# quote = quote_server.get_quote(self.user.userid, stock_symbol)
 		try:
 			buy = UncommittedBuy.objects.get(user=self.user)
 			buy.delete()
@@ -137,11 +135,8 @@ class UserManager:
 		sell.save()
 
 	def cancel_set_buy(self, stock_symbol):
-		sell = SellTrigger.objects.get(user=self.user,stock_symbol=stock_symbol)
+		sell = BuyTrigger.objects.get(user=self.user,stock_symbol=stock_symbol)
 		sell.delete()
-
-
-
 
 	def commit_buy(self):
 		buy = UncommittedBuy.objects.get(user=self.user)
@@ -275,7 +270,7 @@ def cancel_sell(request, userid):
 	user.cancel_sell()
 	return HttpResponse("cancelled uncommitted, if any.")
 
-def set_buy_amount(userid, stock_symbol, amount):
+def set_buy_amount(request, userid, stock_symbol, amount):
 	user = UserManager(userid)
 	if user.get_funds() < amount:
 		# display error
