@@ -38,8 +38,8 @@ def QuoteServer(userid, stock_symbol):
 	dataSend = bytes(dataSend, 'utf-8')
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
 		s.connect((HOST, PORT))
-	s.sendall(dataSend)
-	data = s.recv(1024)
+		s.sendall(dataSend)
+		data = s.recv(1024)
 
 	receivedData = repr(data)
 	receivedData = receivedData[1:].replace("'", "")
