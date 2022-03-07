@@ -8,7 +8,7 @@
 			<transactionNum>{{event.transaction.id}}</transactionNum>
 			<command>{{event.transaction.command}}</command>
 			<username>{{event.transaction.user_account.account_name}}</username>
-			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
+			<funds>{{event.transaction.amount}}</funds>
 		</userCommand>
 		<accountTransaction>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
@@ -27,7 +27,7 @@
 			<command>{{event.transaction.command}}</command>
 			<username>{{event.transaction.user_account.account_name}}</username>
 			<stockSymbol>{{event.transaction.stock_symbol}}</stockSymbol>
-			<funds>{{event.transaction.user_account.cumulative_funds}}</funds>
+			<funds>{{event.transaction.amount}}</funds>
 		</userCommand>
 		{% endif %}
 		{% if event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' %}
