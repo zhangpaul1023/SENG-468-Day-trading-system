@@ -105,7 +105,7 @@ def workload(request):
 				server=server,
 				command=command,
 				price=QuoteServer(user_account, command_data['symbol'])[0],
-				quoteServerTime=QuoteServer(user_account, command_data['symbol'])[1],
+				quoteServerTime=int(QuoteServer(user_account, command_data['symbol'])[1]),
 				cryptokey=QuoteServer(user_account, command_data['symbol'])[2],
 				stock_symbol=command_data['symbol'],
 				user_account=user_account
