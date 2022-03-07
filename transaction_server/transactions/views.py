@@ -34,7 +34,7 @@ def QuoteServer(userid, stock_symbol):
 	returndata = []
 	HOST = '192.168.4.2'
 	PORT = 4444
-	dataSend = userid + stock_symbol + "\n"
+	dataSend = str(userid) + " " + str(stock_symbol) + "\n"
 	dataSend = str.encode(dataSend)
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
 		s.connect((HOST, PORT))
