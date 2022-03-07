@@ -44,7 +44,7 @@ def QuoteServer(userid, stock_symbol):
 	receivedData = repr(data)
 	receivedData = receivedData[1:].replace("'", "")
 	data = receivedData.split(",")
-	price = int(data[0])
+	price = float(data[0])
 	quoteServerTime = int(data[3])
 	cryptokey = data[4]
 	returndata.append(price)
