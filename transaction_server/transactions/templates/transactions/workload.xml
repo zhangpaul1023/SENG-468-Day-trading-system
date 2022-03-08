@@ -2,7 +2,7 @@
 <log>
 {% for event in log_events %}
 	{% if event.event_source == 'USER_COMMAND' +%}
-		{% if event.transaction.command == 'ADD' +%}
+		{% if event.transaction.command == 'ADD' %}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -20,7 +20,7 @@
 			<funds>{{event.transaction.amount}}</funds>}
 		</accountTransaction>
 		{% endif %}
-		{% if event.transaction.command == 'BUY' or event.transaction.command == 'SELL' or event.transaction.command == 'SET_BUY_AMOUNT' or event.transaction.command == 'SET_SELL_AMOUNT' +%}
+		{% if event.transaction.command == 'BUY' or event.transaction.command == 'SELL' or event.transaction.command == 'SET_BUY_AMOUNT' or event.transaction.command == 'SET_SELL_AMOUNT' %}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -31,7 +31,7 @@
 			<funds>{{event.transaction.amount}}</funds>
 		</userCommand>
 		{% endif %}
-		{% if event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' +%}
+		{% if event.transaction.command == 'CANCEL_SET_BUY' or event.transaction.command == 'CANCEL_SET_SELL' %}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -41,7 +41,7 @@
 			<stockSymbol>{{event.transaction.stock_symbol}}</stockSymbol>
 		</userCommand>
 		{% endif %}
-		{% if event.transaction.command == 'COMMIT_BUY' or event.transaction.command == 'CANCEL_BUY' or event.transaction.command == 'COMMIT_SELL' or event.transaction.command == 'CANCEL_SELL' or event.transaction.command == 'DISPLAY_SUMMARY' +%}
+		{% if event.transaction.command == 'COMMIT_BUY' or event.transaction.command == 'CANCEL_BUY' or event.transaction.command == 'COMMIT_SELL' or event.transaction.command == 'CANCEL_SELL' or event.transaction.command == 'DISPLAY_SUMMARY' %}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -50,7 +50,7 @@
 			<username>{{event.transaction.user_account.account_name}}</username>
 		</userCommand>
 		{% endif %}
-		{% if event.transaction.command == 'QUOTE' +%}
+		{% if event.transaction.command == 'QUOTE' %}
 		<quoteServer>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
@@ -62,7 +62,7 @@
 			<cryptokey>{{event.transaction.cryptokey}}</cryptokey>
 		</quoteServer>
 		{% endif %}
-		{% if event.transaction.command == 'DUMPLOG' +%}
+		{% if event.transaction.command == 'DUMPLOG' %}
 		<systemEvent>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
