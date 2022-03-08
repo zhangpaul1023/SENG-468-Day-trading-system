@@ -35,7 +35,7 @@ class Transaction(models.Model):
 	timestamp = int(datatime.timestamp())
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
-	quoteServerTime = models.DecimalField(decimal_places=2, max_digits=24, null=True)
+	quoteServerTime = models.DecimalField(decimal_places=0, max_digits=24, null=True)
 	cryptokey = models.CharField(max_length=64, null=True)
 	price = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 	# Context-Dependant Fields
