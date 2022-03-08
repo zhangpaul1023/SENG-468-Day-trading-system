@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <log>
 {% for event in log_events %}
-	{% if event.event_source == 'USER_COMMAND' %}
+	{% if event.event_source == 'USER_COMMAND' +%}
 		{% if event.transaction.command == 'ADD' +%}
 		<userCommand>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
