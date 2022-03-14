@@ -1,7 +1,8 @@
 from argparse import ONE_OR_MORE
 from django.db import models
 from django.contrib.auth.models import User
-import datetime
+from datetime import datetime, timedelta
+import time
 
 class UserAccount(models.Model):
 	account_name = models.CharField(max_length=32)
@@ -31,8 +32,8 @@ class Transaction(models.Model):
 		DUMPLOG = 'DUMPLOG'
 		DISPLAY_SUMMARY = 'DISPLAY_SUMMARY'
 
-	datatime = datetime.datetime.now()
-	timestamp = int(datatime.timestamp())
+	dtime = datetime.now() + timedelta(seconds=3)
+	timestamp = time.mktime(dtime.timetuple())
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
 	quoteServerTime = models.DecimalField(decimal_places=0, max_digits=24, null=True)
