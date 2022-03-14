@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <log>
 {% for event in log_events %}
-	{{% if event.transaction.command == 'ADD' %}
+	{% if event.transaction.command == 'ADD' %}
 	<userCommand>
 		<timestamp>{{event.transaction.timestamp}}</timestamp>
 		<server>{{event.transaction.server}}</server>
@@ -72,6 +72,6 @@
 		<command>{{event.transaction.command}}</command>
 		<filename>{{event.transaction.filename}}</filename>
 	</systemEvent>
-	{% endif %}}
+	{% endif %}
 {% endfor %}
 </log>
