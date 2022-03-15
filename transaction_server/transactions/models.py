@@ -32,7 +32,7 @@ class Transaction(models.Model):
 		DISPLAY_SUMMARY = 'DISPLAY_SUMMARY'
 
 	datatime = datetime.datetime.now()
-	timestamp = int(datatime.timestamp())*1000
+	timestamp = int(datatime.timestamp())*100
 	server = models.CharField(max_length=64)
 	command = models.CharField(choices=Command.choices, max_length=16)
 	quoteServerTime = models.DecimalField(decimal_places=0, max_digits=24, null=True)
