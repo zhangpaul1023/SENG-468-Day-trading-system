@@ -1,5 +1,5 @@
 from django.core.management import BaseCommand
-from .models import *
+from transactions.models import *
 
 class QuoteServer:
 	def __init__(self):
