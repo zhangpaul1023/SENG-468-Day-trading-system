@@ -1,36 +1,55 @@
-- model: transactions.UserAccount
+- model: transactions.UserAccount1
   pk: 1
   fields:
-    account1:
-      account_name: oY01WVirLr
-      cumulative_funds: 0
-    account2:
+    account_name: oY01WVirLr
+    cumulative_funds: 0
+- model: transactions.UserAccount2
+    pk: 1
+    fields:
       account_name: umhaEY4lil
       cumulative_funds: 0
-    account3:
-      account_name: LwNQpkd8mr
-      cumulative_funds: 0
-    account4:
-      account_name: kul4JJSoHc
-      cumulative_funds: 0
-    account5:
-      account_name: w69hSQMdyy
-      cumulative_funds: 0
-    account6:
-      account_name: xFrzsBbeiS
-      cumulative_funds: 0
-    account7:
-      account_name: jzi5Fg2GGS
-      cumulative_funds: 0
-    account8:
-      account_name: sYJRWa0Mih
-      cumulative_funds: 0
-    account9:
-      account_name: CqOb5G0hB4
-      cumulative_funds: 0
-    account10:
-      account_name: xFrzsBbeiS
-      cumulative_funds: 0
-    account11:
-      account_name: BqhMWgFe1n
-      cumulative_funds: 0
+- model: transactions.UserAccount3
+  pk: 1
+  fields:
+    account_name: LwNQpkd8mr
+    cumulative_funds: 0
+- model: transactions.UserAccount4
+  pk: 1
+  fields:
+    account_name: kul4JJSoHc
+    cumulative_funds: 0
+- model: transactions.UserAccount5
+  pk: 1
+  fields:
+    account_name: w69hSQMdyy
+    cumulative_funds: 0
+- model: transactions.UserAccount6
+  pk: 1
+  fields:
+    account_name: xFrzsBbeiS
+    cumulative_funds: 0
+- model: transactions.UserAccount7
+  pk: 1
+  fields:
+    account_name: jzi5Fg2GGS
+    cumulative_funds: 0
+- model: transactions.UserAccount8
+  pk: 1
+  fields:
+    account_name: sYJRWa0Mih
+    cumulative_funds: 0
+- model: transactions.UserAccount9
+  pk: 1
+  fields:
+    account_name: CqOb5G0hB4
+    cumulative_funds: 0
+- model: transactions.UserAccount10
+  pk: 1
+  fields:
+    account_name: xFrzsBbeiS
+    cumulative_funds: 0
+- model: transactions.UserAccount11
+  pk: 1
+  fields:
+    account_name: BqhMWgFe1n
+    cumulative_funds: 0

@@ -3,40 +3,39 @@ from django.db import models
 from django.contrib.auth.models import User
 import datetime
 
-class UserAccount(models.Model):
-	class account1(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account2(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account3(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account4(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account5(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account6(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account7(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account8(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account9(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account10(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
-	class account11(models.Model):
-		account_name = models.CharField(max_length=32)
-		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount1(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount2(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount3(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount4(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount5(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount6(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount7(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount8(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount9(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount10(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+class UserAccount11(models.Model):
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
 
 
 # Every command must be associated with a transactions.
