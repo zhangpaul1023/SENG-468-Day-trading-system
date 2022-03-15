@@ -4,8 +4,40 @@ from django.contrib.auth.models import User
 import datetime
 
 class UserAccount(models.Model):
-	account_name = models.CharField(max_length=32)
-	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account1(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account2(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account3(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account4(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account5(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account6(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account7(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account8(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account9(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account10(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+	class account11(models.Model):
+		account_name = models.CharField(max_length=32)
+		cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
+
 
 # Every command must be associated with a transactions.
 # There is a 1:1 relationship between transactions and commands.
