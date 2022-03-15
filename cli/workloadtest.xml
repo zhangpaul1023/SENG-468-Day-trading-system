@@ -16187,3 +16187,8992 @@
 	
 
 </log>
+<?xml version="1.0"?>
+<log>
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>1</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>1</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>2</transactionNum>
+			<price>1.49</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313515710</quoteServerTime>
+			<cryptokey>/62BGOBqP5nHwNyXpvqb7kdbbIyCyGcXdZMbaxgvIHE=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>3</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>276.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>4</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>5</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>6</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>7</transactionNum>
+			<price>3.31</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313516739</quoteServerTime>
+			<cryptokey>cMVOvClMDl3HwNyXpvqb7gYAJ3dT/9N/GvMTSBFZSNw=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>8</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>8</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>9</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>10</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>11</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>12</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>12</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>13</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>303.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>14</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>15</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>16</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>17</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>18</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>18</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>19</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>20</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>21</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>22</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>51.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>23</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>24</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>25</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>156.07</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>26</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>27</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>575.27</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>28</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>29</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>30</transactionNum>
+			<command>SET_BUY_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>658.38</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>31</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>641.90</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>32</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>33</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>34</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>35</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>36</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>37</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>38</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>264.17</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>39</transactionNum>
+			<price>9.89</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313516871</quoteServerTime>
+			<cryptokey>C+AeCoIN2sSnWf2Z82/MPVZH0PYIkXZ3Abd4BcB2J10=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>40</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>657.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>41</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>42</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>43</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>710.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>44</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>45</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>208.11</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>46</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>47</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>48</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>48</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>49</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>433.22</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>51</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>387.59</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>52</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>53</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>54</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>55</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>56</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>57</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>58</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>59</transactionNum>
+			<price>26.64</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313520955</quoteServerTime>
+			<cryptokey>25Si+ZUTIZynWf2Z82/MPcz2jx92GiQJx9cLjeDFBjU=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>60</transactionNum>
+			<price>31.47</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313523966</quoteServerTime>
+			<cryptokey>8cgZpzIwiDunWf2Z82/MPbNTmvyBOTuUMRM/97QZkso=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>61</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>429.74</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>63</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>384.67</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>64</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>65</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>66</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>357.57</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>67</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>68</transactionNum>
+			<command>SET_SELL_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>216.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>69</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>70</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>516.29</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>71</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>72</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>41.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>74</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>75</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>76</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>77</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>289.68</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>78</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>79</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>79</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>80</transactionNum>
+			<price>56.05</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313525053</quoteServerTime>
+			<cryptokey>UxMU5yQbS7ynWf2Z82/MPZn/xvyT3hU2CVD4qoueg0M=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>81</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>333.91</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>82</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>83</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>213.24</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>84</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>427.36</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>85</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>86</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>730.08</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>87</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>88</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>36.79</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>89</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>90</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>644.65</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>91</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>92</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>93</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>94</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>95</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>96</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>749.86</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>97</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>98</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>99</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>664.10</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>100</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>100</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>101</transactionNum>
+			<price>41.28</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313528437</quoteServerTime>
+			<cryptokey>MvzFkyq9LlWnWf2Z82/MPetUfawQ2Wo+SrPTzQ68wiQ=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>102</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>276.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>103</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>104</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>105</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>106</transactionNum>
+			<price>35.35</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313528460</quoteServerTime>
+			<cryptokey>OvF1121zIuinWf2Z82/MPbJbWkEtnS7+GPXnEQqHX2A=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>107</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>107</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>108</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>109</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>110</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>111</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>111</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>112</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>303.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>113</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>114</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>115</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>116</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>117</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>117</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>118</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>119</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>120</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>121</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>51.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>122</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>123</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>124</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>156.07</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>125</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>126</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>575.27</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>127</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>128</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>129</transactionNum>
+			<command>SET_BUY_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>658.38</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>130</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>641.90</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>131</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>132</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>133</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>134</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>135</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>136</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>137</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>264.17</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>138</transactionNum>
+			<price>26.24</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313533592</quoteServerTime>
+			<cryptokey>JlHfpH0iqmKnWf2Z82/MPZSQY7xnFQ8CoBazVyFG6sI=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>139</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>657.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>140</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>141</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>142</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>710.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>143</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>144</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>208.11</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>145</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>146</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>147</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>147</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>148</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>433.22</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>150</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>387.59</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>151</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>152</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>153</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>154</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>155</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>156</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>157</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>158</transactionNum>
+			<price>26.93</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313536679</quoteServerTime>
+			<cryptokey>v3uImCyBhtunWf2Z82/MPQMaUITdilo82jBD96kvWMU=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>159</transactionNum>
+			<price>24.53</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313537686</quoteServerTime>
+			<cryptokey>C1oskYS6daunWf2Z82/MPcRhaJE0ONjgTBP3R28tyac=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>160</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>429.74</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>162</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>384.67</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>163</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>164</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>165</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>357.57</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>166</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>167</transactionNum>
+			<command>SET_SELL_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>216.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>168</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>169</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>516.29</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>170</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>171</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>41.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>173</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>174</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>175</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>176</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>289.68</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>177</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>178</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>178</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>179</transactionNum>
+			<price>33.66</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647313537775</quoteServerTime>
+			<cryptokey>1Cx4buZGHSqnWf2Z82/MPW0IqKLwz4I7uNWjh+D0oBA=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>180</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>333.91</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>181</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>182</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>213.24</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>183</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>427.36</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>184</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>185</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>730.08</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>186</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>187</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>36.79</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>188</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>189</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>644.65</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>190</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>191</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>192</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>193</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>194</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>195</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>749.86</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>196</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>197</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>198</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>664.10</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>199</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>199</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>200</transactionNum>
+			<price>32.98</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314558487</quoteServerTime>
+			<cryptokey>5aLSRiV6bWSnWf2Z82/MPZfUUb5rkB78KILLP9yMQOU=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>201</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>276.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>202</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>203</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>204</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>205</transactionNum>
+			<price>28.18</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314562517</quoteServerTime>
+			<cryptokey>Ku+0gyxXiGanWf2Z82/MPaHx4hZzgrQ+fm/aL2dW0pI=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>206</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>206</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>207</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>208</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>209</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>210</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>210</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>211</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>303.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>212</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>213</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>214</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>215</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>216</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>216</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>217</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>218</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>219</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>220</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>51.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>221</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>222</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>223</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>156.07</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>224</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>225</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>575.27</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>226</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>227</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>228</transactionNum>
+			<command>SET_BUY_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>658.38</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>229</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>641.90</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>230</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>231</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>232</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>233</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>234</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>235</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>236</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>264.17</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>237</transactionNum>
+			<price>27.08</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314564664</quoteServerTime>
+			<cryptokey>c7adC+0bcMSnWf2Z82/MPUexhYBvA2Xx4Fl3bfJ0JZ0=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>238</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>657.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>239</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>240</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>241</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>710.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>242</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>243</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>208.11</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>244</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>245</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>246</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>246</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>247</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>433.22</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>249</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>387.59</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>250</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>251</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>252</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>253</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>254</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>255</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>256</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>257</transactionNum>
+			<price>24.75</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314564754</quoteServerTime>
+			<cryptokey>fdVqjzs9J/CnWf2Z82/MPZsJ6qyrV+5dUwjYjZ5Nz5A=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>258</transactionNum>
+			<price>57.28</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314564760</quoteServerTime>
+			<cryptokey>Cx2sRQwYxhinWf2Z82/MPaSsTssxOEWOGPXnEQqHX2A=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>259</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>429.74</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>261</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>384.67</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>262</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>263</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>264</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>357.57</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>265</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>266</transactionNum>
+			<command>SET_SELL_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>216.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>267</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>268</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>516.29</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>269</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>270</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>41.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>272</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>273</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>274</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>275</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>289.68</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>276</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>277</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>277</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>278</transactionNum>
+			<price>85.25</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314565846</quoteServerTime>
+			<cryptokey>Y3fuTVA9bNunWf2Z82/MPYSE9UiPJgvI0PQQifmpgOw=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>279</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>333.91</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>280</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>281</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>213.24</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>282</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>427.36</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>283</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>284</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>730.08</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>285</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>286</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>36.79</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>287</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>288</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>644.65</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>289</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>290</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>291</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>292</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>293</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>294</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>749.86</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>295</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>296</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>297</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>664.10</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>298</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>298</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>299</transactionNum>
+			<price>87.36</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314639732</quoteServerTime>
+			<cryptokey>Nmbfz1I4DdunWf2Z82/MPbCNOvF3UdgKCo7eIbFvQCI=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>300</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>276.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>301</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>302</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>303</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>304</transactionNum>
+			<price>104.07</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314642761</quoteServerTime>
+			<cryptokey>ndzgpBxWJ96eBIDg6MBD9TWacXHfBfdagoXs3Ivj4ow=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>305</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>305</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>306</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>307</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>308</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>309</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>309</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>310</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>303.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>311</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>312</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>313</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>314</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>315</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>315</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>316</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>317</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>318</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>319</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>51.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>320</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>321</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>322</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>156.07</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>323</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>324</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>575.27</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>325</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>326</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>327</transactionNum>
+			<command>SET_BUY_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>658.38</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>328</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>641.90</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>329</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>330</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>331</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>332</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>333</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>334</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>335</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>264.17</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>336</transactionNum>
+			<price>96.17</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314642894</quoteServerTime>
+			<cryptokey>77tGsKjfQw2eBIDg6MBD9TWacXHfBfdaXwWElKoaAi8=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>337</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>657.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>338</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>339</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>340</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>710.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>341</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>342</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>208.11</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>343</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>344</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>345</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>345</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>346</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>433.22</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>348</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>387.59</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>349</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>350</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>351</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>352</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>353</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>354</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>355</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>356</transactionNum>
+			<price>75.50</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314642969</quoteServerTime>
+			<cryptokey>X3ACDWjoGL2nWf2Z82/MPdVw+Aze2cjwWpiXJ53O1Wk=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>357</transactionNum>
+			<price>65.97</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314643976</quoteServerTime>
+			<cryptokey>V66+T/0BnSqnWf2Z82/MPWKRbJmOvPrBtHZnW5Cf+KA=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>358</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>429.74</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>360</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>384.67</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>361</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>362</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>363</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>357.57</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>364</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>365</transactionNum>
+			<command>SET_SELL_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>216.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>366</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>367</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>516.29</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>368</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>369</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>41.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>371</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>372</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>373</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>374</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>289.68</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>375</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>376</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>376</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>377</transactionNum>
+			<price>39.07</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647314647061</quoteServerTime>
+			<cryptokey>+SBk25bEGeqeBIDg6MBD9adCRxa3J3QSoVz7rGPN9XE=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>378</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>333.91</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>379</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>380</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>213.24</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>381</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>427.36</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>382</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>383</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>730.08</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>384</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>385</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>36.79</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>386</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>387</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>644.65</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>388</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>389</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>390</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>391</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>392</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>393</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>749.86</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>394</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>395</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>396</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>664.10</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>397</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>397</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>63511.53</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>398</transactionNum>
+			<price>112.24</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315274169</quoteServerTime>
+			<cryptokey>wt8AP5om3SKeBIDg6MBD9X/419k49PPT19jCgcs2jfQ=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>399</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>276.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>400</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>401</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>402</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>403</transactionNum>
+			<price>570.41</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315274192</quoteServerTime>
+			<cryptokey>dwFS4FO/DQ6eBIDg6MBD9X/419k49PPTPinNgCrVoVk=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>404</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>404</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>45016.23</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>405</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>406</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>407</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>408</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>408</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>71879.98</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>409</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>303.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>410</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>411</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>412</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>413</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>414</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>414</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>74315.15</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>415</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>416</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>417</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>418</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>51.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>419</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>420</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>421</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>156.07</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>422</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>423</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>575.27</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>424</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>425</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>426</transactionNum>
+			<command>SET_BUY_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>658.38</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>427</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>641.90</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>428</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>429</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>430</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>431</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>432</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>433</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>434</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>264.17</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>435</transactionNum>
+			<price>454.87</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315277320</quoteServerTime>
+			<cryptokey>2zIxCrJQ6W2eBIDg6MBD9a7KIsVj1GquUbF618MijnI=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>436</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>657.49</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>437</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>438</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>439</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>710.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>440</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>441</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>208.11</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>442</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>443</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>444</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>444</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>52802.93</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>445</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>433.22</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>447</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>387.59</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>448</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>449</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>450</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>451</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>452</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>453</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>454</transactionNum>
+			<command>DISPLAY_SUMMARY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>455</transactionNum>
+			<price>491.88</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315277405</quoteServerTime>
+			<cryptokey>H6lHSSgLTdieBIDg6MBD9ee8F5ej6WzZRK9sDdhigmE=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>456</transactionNum>
+			<price>593.78</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315278416</quoteServerTime>
+			<cryptokey>jIFel7nxjsyeBIDg6MBD9Vc+Ael9Nidl49hMhvyDv/s=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>457</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>429.74</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>459</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>384.67</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>460</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>461</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>462</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>357.57</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>463</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>464</transactionNum>
+			<command>SET_SELL_AMOUNT</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>216.83</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>465</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>466</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>516.29</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>467</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>468</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>41.47</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>470</transactionNum>
+			<command>COMMIT_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>471</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>472</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>473</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>289.68</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>474</transactionNum>
+			<command>CANCEL_SET_BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>475</transactionNum>
+			<command>ADD</command>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>
+		</userCommand>
+		<accountTransaction>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>475</transactionNum>
+			<action>ADD</action>
+			<username>oY01WVirLr</username>
+			<funds>87863.73</funds>}
+		</accountTransaction>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		<quoteServer>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>476</transactionNum>
+			<price>727.64</price>
+			<stockSymbol>S</stockSymbol>
+			<username>oY01WVirLr</username>
+			<quoteServerTime>1647315282505</quoteServerTime>
+			<cryptokey>rRUOHAOUwx6OsNlKb2TQVNUav8JZvemy87XN9H7d6gs=\n</cryptokey>
+		</quoteServer>
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>477</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>333.91</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>478</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>479</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>213.24</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>480</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>427.36</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>481</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>482</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>730.08</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>483</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>484</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>36.79</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>485</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>486</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>644.65</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>487</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>488</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>489</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>490</transactionNum>
+			<command>CANCEL_SELL</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>491</transactionNum>
+			<command>CANCEL_SET_SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+		</userCommand>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>492</transactionNum>
+			<command>BUY</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>749.86</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>493</transactionNum>
+			<command>COMMIT_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>494</transactionNum>
+			<command>CANCEL_BUY</command>
+			<username>oY01WVirLr</username>
+		</userCommand>
+		
+		
+		
+	
+
+	
+		
+		
+		<userCommand>
+			<timestamp>1647315356000</timestamp>
+			<server>369b84a3f2bf</server>
+			<transactionNum>495</transactionNum>
+			<command>SELL</command>
+			<username>oY01WVirLr</username>
+			<stockSymbol>S</stockSymbol>
+			<funds>664.10</funds>
+		</userCommand>
+		
+		
+		
+		
+		
+	
+
+</log>
