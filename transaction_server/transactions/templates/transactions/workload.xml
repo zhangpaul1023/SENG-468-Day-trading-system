@@ -16,7 +16,7 @@
 			<transactionNum>{{event.transaction.id}}</transactionNum>
 			<action>{{event.transaction.command}}</action>
 			<username>{{event.transaction.user_account.account_name}}</username>
-			<funds>{{event.transaction.amount}}</funds>}
+			<funds>{{event.transaction.amount}}</funds>
 		</accountTransaction>
 		{% endif %}
 		{% if event.transaction.command == 'BUY' or event.transaction.command == 'SELL' or event.transaction.command == 'SET_BUY_AMOUNT' or event.transaction.command == 'SET_SELL_AMOUNT' %}
