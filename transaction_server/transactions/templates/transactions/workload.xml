@@ -10,6 +10,8 @@
 			<username>{{event.transaction.user_account.account_name}}</username>
 			<funds>{{event.transaction.amount}}</funds>
 		</userCommand>
+		{% endif %}
+		{% if event.transaction.command == 'ADD' %}
 		<accountTransaction>
 			<timestamp>{{event.transaction.timestamp}}</timestamp>
 			<server>{{event.transaction.server}}</server>
