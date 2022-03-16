@@ -1,0 +1,586 @@
+[
+    {
+        "command": "ADD",
+        "transactionNum": 1,
+        "userId": "oY01WVirLr",
+        "amount": 63511.53
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 2,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 3,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 276.83
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 4,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 5,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 6,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 7,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "ADD",
+        "transactionNum": 8,
+        "userId": "oY01WVirLr",
+        "amount": 45016.23
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 9,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 10,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "DISPLAY_SUMMARY",
+        "transactionNum": 11,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "ADD",
+        "transactionNum": 12,
+        "userId": "oY01WVirLr",
+        "amount": 71879.98
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 13,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 303.83
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 14,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 15,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 16,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 17,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "ADD",
+        "transactionNum": 18,
+        "userId": "oY01WVirLr",
+        "amount": 74315.15
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 19,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_BUY",
+        "transactionNum": 20,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 21,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 22,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 51.49
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 23,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 24,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 25,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 156.07
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 26,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 27,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 575.27
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 28,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "DISPLAY_SUMMARY",
+        "transactionNum": 29,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SET_BUY_AMOUNT",
+        "transactionNum": 30,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 658.38
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 31,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 641.9
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 32,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 33,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_SELL",
+        "transactionNum": 34,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 35,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 36,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 37,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 38,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 264.17
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 39,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 40,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 657.49
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 41,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "DISPLAY_SUMMARY",
+        "transactionNum": 42,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 43,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 710.47
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 44,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 45,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 208.11
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 46,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "DISPLAY_SUMMARY",
+        "transactionNum": 47,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "ADD",
+        "transactionNum": 48,
+        "userId": "oY01WVirLr",
+        "amount": 52802.93
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 49,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 433.22
+    },
+    {
+        "command": "SET_SELL_TRIGGER",
+        "transactionNum": 50,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "price": "59.23 "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 51,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 387.59
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 52,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 53,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 54,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 55,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_BUY",
+        "transactionNum": 56,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "CANCEL_SET_BUY",
+        "transactionNum": 57,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "DISPLAY_SUMMARY",
+        "transactionNum": 58,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 59,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 60,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 61,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 429.74
+    },
+    {
+        "command": "SET_SELL_TRIGGER",
+        "transactionNum": 62,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "price": "51.92 "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 63,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 384.67
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 64,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 65,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 66,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 357.57
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 67,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SET_SELL_AMOUNT",
+        "transactionNum": 68,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 216.83
+    },
+    {
+        "command": "CANCEL_SET_SELL",
+        "transactionNum": 69,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 70,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 516.29
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 71,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 72,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 41.47
+    },
+    {
+        "command": "SET_SELL_TRIGGER",
+        "transactionNum": 73,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "price": "30.04 "
+    },
+    {
+        "command": "COMMIT_SELL",
+        "transactionNum": 74,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_BUY",
+        "transactionNum": 75,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "CANCEL_SET_SELL",
+        "transactionNum": 76,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 77,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 289.68
+    },
+    {
+        "command": "CANCEL_SET_BUY",
+        "transactionNum": 78,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "ADD",
+        "transactionNum": 79,
+        "userId": "oY01WVirLr",
+        "amount": 87863.73
+    },
+    {
+        "command": "QUOTE",
+        "transactionNum": 80,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 81,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 333.91
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 82,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 83,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 213.24
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 84,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 427.36
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 85,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 86,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 730.08
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 87,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 88,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 36.79
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 89,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 90,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 644.65
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 91,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 92,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_SELL",
+        "transactionNum": 93,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "CANCEL_SELL",
+        "transactionNum": 94,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_SET_SELL",
+        "transactionNum": 95,
+        "userId": "oY01WVirLr",
+        "symbol": "S "
+    },
+    {
+        "command": "BUY",
+        "transactionNum": 96,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 749.86
+    },
+    {
+        "command": "COMMIT_BUY",
+        "transactionNum": 97,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "CANCEL_BUY",
+        "transactionNum": 98,
+        "userId": "oY01WVirLr "
+    },
+    {
+        "command": "SELL",
+        "transactionNum": 99,
+        "userId": "oY01WVirLr",
+        "symbol": "S",
+        "amount": 664.1
+    },
+    {
+        "command": "DUMPLOG",
+        "transactionNum": 100,
+        "filename": "./testLOG"
+    }
+]
