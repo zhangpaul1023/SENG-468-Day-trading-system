@@ -7,7 +7,7 @@
   pk: 2
   fields:
     account_name: umhaEY4lil
-     cumulative_funds: 0
+    cumulative_funds: 0
 - model: transactions.UserAccount
   pk: 3
   fields:
