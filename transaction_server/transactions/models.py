@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 import datetime
 
 class UserAccount(models.Model):
-	account_name = models.CharField(max_length=32, default="oY01WVirLr")
-	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24, default=0)
+	account_name = models.CharField(max_length=32)
+	cumulative_funds = models.DecimalField(decimal_places=2, max_digits=24)
 
 
 
