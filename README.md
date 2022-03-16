@@ -15,5 +15,5 @@ docker-compose up
 To launch test from terminal client:
 ```sh
 cd cli
-./client.py ./cli/workload.txt http://localhost:8000/transactions/workload
+./client.py ./workload.txt http://localhost:8000/transactions/workload
 ```
