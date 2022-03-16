@@ -48,3 +48,9 @@
   fields:
     account_name: BqhMWgFe1n
     cumulative_funds: 0
+- model: transactions.UserAccount
+  pk: 11
+  fields:
+    account_name: ojovZ9YLZM
+    cumulative_funds: 0
+
