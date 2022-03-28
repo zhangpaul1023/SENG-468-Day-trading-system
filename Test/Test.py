@@ -1,11 +1,9 @@
 import requests
-import time
+
 
 URL_ROOT = 'http://localhost:8000/transactions'
 
 
-# connection = client.connect("192.168.99.100:4200", username="crate")
-# c = connection.cursor()
 
 
 def test_add():
@@ -21,12 +19,7 @@ def test_add():
 
     r = requests.post(URL_ROOT + '/add', json=data)
     print (r)
-    # time.sleep(2)
 
-    # connection = client.connect("localhost:4200", username="crate")
-    # c = connection.cursor()
-    # c.execute('SELECT * FROM USERS;')
-    # print (c.fetchall())
 
 
 def test_buy():
