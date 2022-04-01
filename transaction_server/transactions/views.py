@@ -17,41 +17,102 @@ def create_user(request, userid):
 
 def add(request, userid, amount):
 	user = User.objects.get(userid=userid)
-	user.add(amount)
+	user.add_funds(amount)
 	return HttpResponse("success")
 
 def buy(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	user = User.objects.get(userid=userid)
+	if user.funds < amount:
+		return HttpResponse("failure")
+	else:
+		UncommittedBuy.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		return HttpResponse("success")
 
 def sell(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	user = User.objects.get(userid=userid)
+	if user.get_stock_account(stock_symbol).get_funds < amount:
+		return HttpResponse("failure")
+	else:
+		UncommittedSell.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		return HttpResponse("success")
 
 def commit_buy(request, userid):
-	return HttpResponse("success")
+	buy = User.objects.get(userid=userid).get_recent_buy()
+	if buy == None or not buy.is_recent():
+		return HttpResponse("failure")
+	else:
+		buy.commit()
+		return HttpResponse("success")
 
 def commit_sell(request, userid):
-	return HttpResponse("success")
+	sell = User.objects.get(userid=userid).get_recent_sell()
+	if sell == None or not sell.is_recent():
+		return HttpResponse("success")
+	else:
+		sell.commit()
+		return HttpResponse("success")
+
 
 def cancel_buy(request, userid):
-	return HttpResponse("success")
+	buy = User.objects.get(userid=userid).get_recent_buy()
+	if buy == None:
+		return HttpResponse("failure")
+	else:
+		buy.cancel()
+		return HttpResponse("success")
 
 def cancel_sell(request, userid):
-	return HttpResponse("success")
+	sell = User.objects.get(userid=userid).get_recent_sell()
+	if sell == None:
+		return HttpResponse("failure")
+	else:
+		sell.cancel()
+		return HttpResponse("success")
 
 def set_buy_amount(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	user = User.objects.get(userid=userid)
+	if user.funds < amount:
+		return HttpResponse("failure")
+	else:
+		SetBuy.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		return HttpResponse("success")
 
 def set_buy_trigger(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	buy = User.objects.get(userid=userid).get_set_buy(stock_symbol)
+	if buy == None:
+		return HttpResponse("failure")
+	else:
+		buy.set_buy_trigger(amount)
+		return HttpResponse("success")
 
 def cancel_set_buy(request, userid, stock_symbol):
-	return HttpResponse("success")
+	buy = User.objects.get(userid=userid).get_set_buy(stock_symbol)
+	if buy == None:
+		return HttpResponse("failure")
+	else:
+		buy.cancel()
+		return HttpResponse("success")
 
 def set_sell_amount(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	user = User.objects.get(userid=userid)
+	if user.get_stock_account(stock_symbol).get_funds < amount:
+		return HttpResponse("failure")
+	else:
+		SetSell.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		return HttpResponse("success")
 
 def set_sell_trigger(request, userid, stock_symbol, amount):
-	return HttpResponse("success")
+	sell = User.objects.get(userid=userid).get_set_sell(stock_symbol)
+	if sell == None:
+		return HttpResponse("failure")
+	else:
+		buy.set_sell_trigger(amount)
+		return HttpResponse("success")
 
 def cancel_set_sell(request, userid, stock_symbol):
-	return HttpResponse("success")
+	sell = User.objects.get(userid=userid).get_set_sell(stock_symbol)
+	if sell == None:
+		return HttpResponse("failure")
+	else:
+		sell.cancel()
+		return HttpResponse("success")

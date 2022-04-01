@@ -96,6 +96,8 @@ class StockAccount(models.Model):
 	stock_symbol = models.CharField(max_length=3)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, default=0.0)
 
+	def get_funds(self):
+		return funds*user.get_quote(stock_symbol)
 	def add_funds(self, amount):
 		self.funds += amount/user.get_quote(stock_symbol)
 		self.save()
