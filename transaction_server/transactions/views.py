@@ -8,6 +8,7 @@ from socket import gethostname
 from json import loads
 from .models import *
 from datetime import datetime, timezone
+from decimal import *
 
 
 
@@ -17,23 +18,23 @@ def create_user(request, userid):
 
 def add(request, userid, amount):
 	user = User.objects.get(userid=userid)
-	user.add_funds(amount)
+	user.add_funds(Decimal(amount.replace(',','.')))
 	return HttpResponse("success")
 
 def buy(request, userid, stock_symbol, amount):
 	user = User.objects.get(userid=userid)
-	if user.funds < amount:
+	if user.funds < Decimal(amount.replace(',','.')):
 		return HttpResponse("failure")
 	else:
-		UncommittedBuy.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		UncommittedBuy.create(user=user, stock_symbol=stock_symbol, funds=Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def sell(request, userid, stock_symbol, amount):
 	user = User.objects.get(userid=userid)
-	if user.get_stock_account(stock_symbol).get_funds < amount:
+	if user.get_stock_account(stock_symbol).get_funds() < Decimal(amount.replace(',','.')):
 		return HttpResponse("failure")
 	else:
-		UncommittedSell.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		UncommittedSell.create(user=user, stock_symbol=stock_symbol, funds=Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def commit_buy(request, userid):
@@ -71,10 +72,10 @@ def cancel_sell(request, userid):
 
 def set_buy_amount(request, userid, stock_symbol, amount):
 	user = User.objects.get(userid=userid)
-	if user.funds < amount:
+	if user.funds < Decimal(amount.replace(',','.')):
 		return HttpResponse("failure")
 	else:
-		SetBuy.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		SetBuy.create(user=user, stock_symbol=stock_symbol, funds=Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def set_buy_trigger(request, userid, stock_symbol, amount):
@@ -82,7 +83,7 @@ def set_buy_trigger(request, userid, stock_symbol, amount):
 	if buy == None:
 		return HttpResponse("failure")
 	else:
-		buy.set_buy_trigger(amount)
+		buy.set_trigger(Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def cancel_set_buy(request, userid, stock_symbol):
@@ -95,10 +96,10 @@ def cancel_set_buy(request, userid, stock_symbol):
 
 def set_sell_amount(request, userid, stock_symbol, amount):
 	user = User.objects.get(userid=userid)
-	if user.get_stock_account(stock_symbol).get_funds < amount:
+	if user.get_stock_account(stock_symbol).get_funds() < Decimal(amount.replace(',','.')):
 		return HttpResponse("failure")
 	else:
-		SetSell.create(user=user, stock_symbol=stock_symbol, funds=amount)
+		SetSell.create(user=user, stock_symbol=stock_symbol, funds=Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def set_sell_trigger(request, userid, stock_symbol, amount):
@@ -106,7 +107,7 @@ def set_sell_trigger(request, userid, stock_symbol, amount):
 	if sell == None:
 		return HttpResponse("failure")
 	else:
-		buy.set_sell_trigger(amount)
+		sell.set_trigger(Decimal(amount.replace(',','.')))
 		return HttpResponse("success")
 
 def cancel_set_sell(request, userid, stock_symbol):
