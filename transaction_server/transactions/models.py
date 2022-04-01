@@ -208,7 +208,7 @@ class UserCommandLog(Log):
 	command = models.CharField(choices=Command.choices, max_length=16)
 	stock_symbol = models.CharField(max_length=3, null=True)
 	filename = models.CharField(max_length=64, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	funds = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 
 class QuoteServerLog(Log):
 	price = models.DecimalField(decimal_places=2, max_digits=24, null=True)
