@@ -12,9 +12,12 @@ from datetime import datetime, timezone
 
 
 def create_user(request, userid):
+	User(userid=userid).save()
 	return HttpResponse("success")
 
 def add(request, userid, amount):
+	user = User.objects.get(userid=userid)
+	user.add(amount)
 	return HttpResponse("success")
 
 def buy(request, userid, stock_symbol, amount):

@@ -1,44 +1,184 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.db.models.signals import pre_save
+# from django.contrib.auth.models import User
+from django.db.models.signals import pre_init
+from django.dispatch import receiver
+
+
+def cancel_if_not_none(item):
+	if item != none: item.cancel()
 
 class User(models.Model):
 	userid = models.CharField(max_length=64)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	funds = models.DecimalField(decimal_places=2, max_digits=24, default=0.0)
 
-	def add(self, amount):
+	def add_funds(self, amount):
 		self.funds += amount
 		self.save()
-		AccountTransactionLog(server='this', user=self, actions=ADD, funds=amount).save()
+		AccountTransactionLog(server='this', user=self, actions='ADD', funds=amount).save()
+	
+	def remove_funds(self, amount):
+		self.funds -= amount
+		self.save()
+		AccountTransactionLog(server='this', user=self, actions='REMOVE', funds=amount).save()
+
+	def get_quote(self, stock_symbol):
+			returndata = []
+			HOST = '192.168.4.2'
+			PORT = 4444
+			dataSend = str(self.userid) + " " + str(stock_symbol) + "\n"
+			dataSend = bytes(dataSend, 'utf-8')
+			with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
+				s.connect((HOST, PORT))
+				s.sendall(dataSend)
+				data = s.recv(1024)
+
+			receivedData = repr(data)
+			receivedData = receivedData[1:].replace("'", "")
+			data = receivedData.split(",")
+			price = float(data[0])
+			quoteServerTime = int(data[3])
+			cryptokey = data[4]
+			QuoteServerLog(	server=this,
+							user=this,
+							price=price,
+							stock_symbol=stock_symbol,
+							quoteServerTime=quoteServerTime,
+							cryptokey=cryptokey).save()
+			return price
+
+	def get_stock_account(self, stock_symbol):
+		try:
+			stock_account = StockAccount.objects.get(user=self,stock_symbol=stock_symbol)
+		except StockAccount.DoesNotExist:
+			stock_account = StockAccount(user=self,stock_symbol=stock_symbol)
+		return stock_account
+
+	def get_recent_buy(self):
+		recent = None
+		try:
+			recent = UncommittedBuy.objects.get(user=self)
+		except UncommittedBuy.DoesNotExist:
+			pass
+		return recent
+
+	def get_recent_sell(self):
+		recent = None
+		try:
+			recent = UncommittedSell.objects.get(user=self)
+		except UncommittedSell.DoesNotExist:
+			pass
+		return recent
+
+	def get_set_buy(self, stock_symbol):
+		set = None
+		try:
+			recent = SetBuy.objects.get(user=self, stock_symbol=stock_symbol)
+		except SetBuy.DoesNotExist:
+			pass
+		return set
+
+	def get_set_sell(self, stock_symbol):
+		set = None
+		try:
+			recent = SetSell.objects.get(user=self, stock_symbol=stock_symbol)
+		except SetSell.DoesNotExist:
+			pass
+		return set
+
+	def get_set_buy(self, stock_symbol):
+		return SetBuy.objects.get(user=self,stock_symbol=stock_symbol)
+
+	def get_set_sell(self, stock_symbol):
+		return SetSell.objects.get(user=self,stock_symbol=stock_symbol)
 
 class StockAccount(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	stock_symbol = models.CharField(max_length=3)
+	funds = models.DecimalField(decimal_places=2, max_digits=24, default=0.0)
 
-class UncommittedBuy(models.Model):
+	def add_funds(self, amount):
+		self.funds += amount/user.get_quote(stock_symbol)
+		self.save()
+	def remove_funds(self, amount):
+		self.funds -= amount/user.get_quote(stock_symbol)
+		self.save()
+
+
+
+class UncomittedTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
-	timestamp = models.DateTimeField()
+	funds = models.DecimalField(decimal_places=2, max_digits=24, default=0.0)
+	timestamp = models.DateTimeField(auto_now=True)
+	def is_recent(self):
+		return (self.timestamp - datetime.now(timezone.utc)).total_seconds() < 60
 
-class UncommittedSell(models.Model):
+class UncommittedBuy(UncomittedTransaction):
+	@classmethod
+	def create(cls, user, stock_symbol, funds):
+		cancel_if_not_none(user.get_recent_buy())
+		user.remove_funds(amount)
+		buy = UncommittedBuy(user=user, stock_symbol=stock_symbol, funds=funds)
+		buy.save()
+		return buy
+
+	def commit(self):
+		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
+		self.delete()
+	def cancel(self):
+		self.user.add_funds(self.funds)
+		self.delete()
+
+class UncommittedSell(UncomittedTransaction):
+	@classmethod
+	def create(cls, user, stock_symbol, funds):
+		cancel_if_not_none(user.get_recent_sell())
+		user.get_stock_account(stock_symbol).remove_funds(funds)
+		sell = UncommittedSell(user=user, stock_symbol=stock_symbol, funds=funds)
+		sell.save()
+		return sell
+
+	def commit(self):
+		self.user.add_funds(self.funds)
+		self.delete()
+	def cancel(self):
+		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
+		self.delete()
+
+class SetTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
 	funds = models.DecimalField(decimal_places=2, max_digits=24)
-	timestamp = models.DateTimeField()
+	triggerAmount = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 
-class BuyTrigger(models.Model):
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=50)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
-	triggerAmount = models.DecimalField(decimal_places=2, max_digits=24)
+	def set_trigger(self, amount):
+		self.triggerAmount = amount
+		self.save()
 
-class SellTrigger(models.Model):
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	stock_symbol = models.CharField(max_length=50)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
-	triggerAmount = models.DecimalField(decimal_places=2, max_digits=24)
+class SetBuy(SetTransaction):
+	@classmethod
+	def create(cls, user, stock_symbol, funds):
+		cancel_if_not_none(user.get_set_buy(stock_symbol))
+		user.remove_funds(amount)
+		buy = SetBuy(user=user, stock_symbol=stock_symbol, funds=funds)
+		buy.save()
+		return buy
+
+	def cancel(self):
+		self.user.get_stock_account(stock_symbol).add_funds(self.funds)
+		self.delete()
+
+class SetSell(SetTransaction):
+	@classmethod
+	def create(cls, user, stock_symbol, funds):
+		cancel_if_not_none(user.get_set_sell(stock_symbol))
+		user.get_stock_account(stock_symbol).remove_funds(amount)
+		sell = SetSell(user=user, stock_symbol=stock_symbol, funds=funds)
+		sell.save()
+		return sell
+	def cancel(self):
+		self.user.add_funds(self.funds)
+		self.delete()
 
 # Create your models here.
 class Command(models.TextChoices):
@@ -60,7 +200,7 @@ class Command(models.TextChoices):
 		DISPLAY_SUMMARY = 'DISPLAY_SUMMARY'
 
 class Log(models.Model):
-	timestamp = models.DateTimeField(auto_now=False)
+	timestamp = models.DateTimeField(auto_now=True)
 	server = models.CharField(max_length=64)
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 

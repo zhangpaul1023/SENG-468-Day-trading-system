@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from os import environ
 from pathlib import Path
-from celery.schedules import crontab
+# from celery.schedules import crontab
 # import core.tasks
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
