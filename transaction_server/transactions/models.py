@@ -165,10 +165,10 @@ class SetBuy(SetTransaction):
 		buy.save()
 		return buy
 	def check_trigger(self):
-		return self.user.get_stock_account(self.stock_symbol) <= self.triggerAmount
+		return self.user.get_stock_account(self.stock_symbol).get_funds() <= self.triggerAmount
 	def commit(self):
 		UncommittedBuy.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
-		SystemEventLog.create(server=this,user=self.user,command='SET_BUY_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
+		SystemEventLog(server=this,user=self.user,command='SET_BUY_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
 		self.delete()
 	def cancel(self):
 		self.user.add_funds(self.funds)
@@ -183,10 +183,10 @@ class SetSell(SetTransaction):
 		sell.save()
 		return sell
 	def check_trigger(self):
-		return self.user.get_stock_account(self.stock_symbol) >= self.triggerAmount
+		return self.user.get_stock_account(self.stock_symbol).get_funds() >= self.triggerAmount
 	def commit(self):
 		UncommittedSell.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
-		SystemEventLog.create(server=this,user=self.user,command='SET_SELL_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
+		SystemEventLog(server=this,user=self.user,command='SET_SELL_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
 		self.delete()
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
