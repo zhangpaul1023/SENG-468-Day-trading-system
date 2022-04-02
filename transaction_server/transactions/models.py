@@ -155,6 +155,7 @@ class SetTransaction(models.Model):
 		self.triggerAmount = amount
 		self.save()
 
+
 class SetBuy(SetTransaction):
 	@classmethod
 	def create(cls, user, stock_symbol, funds):
@@ -163,7 +164,12 @@ class SetBuy(SetTransaction):
 		buy = SetBuy(user=user, stock_symbol=stock_symbol, funds=funds)
 		buy.save()
 		return buy
-
+	def check_trigger(self):
+		return self.user.get_stock_account(self.stock_symbol) <= self.triggerAmount
+	def commit(self):
+		UncommittedBuy.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
+		SystemEventLog.create(server=this,user=self.user,command='SET_BUY_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
+		self.delete()
 	def cancel(self):
 		self.user.add_funds(self.funds)
 		self.delete()
@@ -176,6 +182,12 @@ class SetSell(SetTransaction):
 		sell = SetSell(user=user, stock_symbol=stock_symbol, funds=funds)
 		sell.save()
 		return sell
+	def check_trigger(self):
+		return self.user.get_stock_account(self.stock_symbol) >= self.triggerAmount
+	def commit(self):
+		UncommittedSell.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
+		SystemEventLog.create(server=this,user=self.user,command='SET_SELL_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds)
+		self.delete()
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
 		self.delete()
@@ -233,5 +245,5 @@ class ErrorEventLog(Log):
 	command = models.CharField(choices=Command.choices, max_length=16)
 	stock_symbol = models.CharField(max_length=3, null=True)
 	filename = models.CharField(max_length=64, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	funds = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 	error_message = models.CharField(max_length=64, null=True)

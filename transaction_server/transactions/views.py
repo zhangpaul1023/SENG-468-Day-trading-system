@@ -46,7 +46,8 @@ def sell(request, userid, stock_symbol, amount):
 		return HttpResponse("success")
 
 def commit_buy(request, userid):
-	buy = User.objects.get(userid=userid).get_recent_buy()
+	user = User.objects.get(userid=userid)
+	buy = user.get_recent_buy()
 	if buy == None or not buy.is_recent():
 		ErrorEventLog(server='this', user=user, command='COMMIT_BUY').save()
 		return HttpResponse("failure")
@@ -56,7 +57,8 @@ def commit_buy(request, userid):
 		return HttpResponse("success")
 
 def commit_sell(request, userid):
-	sell = User.objects.get(userid=userid).get_recent_sell()
+	user = User.objects.get(userid=userid)
+	sell = user.get_recent_sell()
 	if sell == None or not sell.is_recent():
 		ErrorEventLog(server='this', user=user, command='COMMIT_SELL').save()
 		return HttpResponse("success")
@@ -67,7 +69,8 @@ def commit_sell(request, userid):
 
 
 def cancel_buy(request, userid):
-	buy = User.objects.get(userid=userid).get_recent_buy()
+	user = User.objects.get(userid=userid)
+	buy = user.get_recent_buy()
 	if buy == None:
 		ErrorEventLog(server='this', user=user, command='CANCEL_BUY').save()
 		return HttpResponse("failure")
@@ -77,7 +80,8 @@ def cancel_buy(request, userid):
 		return HttpResponse("success")
 
 def cancel_sell(request, userid):
-	sell = User.objects.get(userid=userid).get_recent_sell()
+	user = User.objects.get(userid=userid)
+	sell = User.user.get_recent_sell()
 	if sell == None:
 		ErrorEventLog(server='this', user=user, command='CANCEL_SELL').save()
 		return HttpResponse("failure")
@@ -98,7 +102,8 @@ def set_buy_amount(request, userid, stock_symbol, amount):
 		return HttpResponse("success")
 
 def set_buy_trigger(request, userid, stock_symbol, amount):
-	buy = User.objects.get(userid=userid).get_set_buy(stock_symbol)
+	user = User.objects.get(userid=userid)
+	buy = user.get_set_buy(stock_symbol)
 	funds = Decimal(amount.replace(',','.'))
 	if buy == None:
 		ErrorEventLog(server='this', user=user, command='SET_BUY_TRIGGER', stock_symbol=stock_symbol, funds=funds).save()
@@ -109,7 +114,8 @@ def set_buy_trigger(request, userid, stock_symbol, amount):
 		return HttpResponse("success")
 
 def cancel_set_buy(request, userid, stock_symbol):
-	buy = User.objects.get(userid=userid).get_set_buy(stock_symbol)
+	user = User.objects.get(userid=userid)
+	buy = user.get_set_buy(stock_symbol)
 	if buy == None:
 		ErrorEventLog(server='this', user=user, command='CANCEL_SET_BUY', stock_symbol=stock_symbol).save()
 		return HttpResponse("failure")
@@ -130,7 +136,8 @@ def set_sell_amount(request, userid, stock_symbol, amount):
 		return HttpResponse("success")
 
 def set_sell_trigger(request, userid, stock_symbol, amount):
-	sell = User.objects.get(userid=userid).get_set_sell(stock_symbol)
+	user = User.objects.get(userid=userid)
+	sell = user.get_set_sell(stock_symbol)
 	funds = Decimal(amount.replace(',','.'))
 	if sell == None:
 		ErrorEventLog(server='this', user=user, command='SET_SELL_TRIGGER', stock_symbol=stock_symbol, funds=funds).save()
@@ -141,7 +148,8 @@ def set_sell_trigger(request, userid, stock_symbol, amount):
 		return HttpResponse("success")
 
 def cancel_set_sell(request, userid, stock_symbol):
-	sell = User.objects.get(userid=userid).get_set_sell(stock_symbol)
+	user = User.objects.get(userid=userid)
+	sell = user.get_set_sell(stock_symbol)
 	if sell == None:
 		ErrorEventLog(server='this', user=user, command='CANCEL_SET_SELL', stock_symbol=stock_symbol).save()
 		return HttpResponse("failure")

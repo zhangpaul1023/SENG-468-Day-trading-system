@@ -11,5 +11,5 @@ def sample_task():
 
 # NEW
 @shared_task
-def send_email_report():
+def check_triggers():
     call_command("check_triggers", )
