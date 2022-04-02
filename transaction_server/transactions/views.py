@@ -23,6 +23,11 @@ def add(request, userid, amount):
 	UserCommandLog(server='this', user=user, command='ADD', funds=funds).save()
 	return HttpResponse("success")
 
+def quote(request, userid, stock_symbol):
+	user = User.objects.get(userid=userid)
+	UserCommandLog(server='this', user=user, command='QUOTE', stock_symbol=stock_symbol).save()
+	return HttpResponse("{}".format(user.get_quote(stock_symbol)))
+
 def buy(request, userid, stock_symbol, amount):
 	user = User.objects.get(userid=userid)
 	funds = Decimal(amount.replace(',','.'))

@@ -4,6 +4,9 @@ from django.db.models.signals import pre_init
 from django.dispatch import receiver
 from datetime import *
 from decimal import *
+import socket
+from socket import gethostname
+
 
 
 def cancel_if_not_none(item):
@@ -24,30 +27,29 @@ class User(models.Model):
 		AccountTransactionLog(server='this', user=self, actions='REMOVE', funds=amount).save()
 
 	def get_quote(self, stock_symbol):
-			# returndata = []
-			# HOST = '192.168.4.2'
-			# PORT = 4444
-			# dataSend = str(self.userid) + " " + str(stock_symbol) + "\n"
-			# dataSend = bytes(dataSend, 'utf-8')
-			# with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
-			# 	s.connect((HOST, PORT))
-			# 	s.sendall(dataSend)
-			# 	data = s.recv(1024)
+			returndata = []
+			HOST = '192.168.4.2'
+			PORT = 4444
+			dataSend = str(self.userid) + " " + str(stock_symbol) + "\n"
+			dataSend = bytes(dataSend, 'utf-8')
+			with socket.socket(socket.AF_INET, socket.SOCK_STREAM)as s:
+				s.connect((HOST, PORT))
+				s.sendall(dataSend)
+				data = s.recv(1024)
 
-			# receivedData = repr(data)
-			# receivedData = receivedData[1:].replace("'", "")
-			# data = receivedData.split(",")
-			# price = float(data[0])
-			# quoteServerTime = int(data[3])
-			# cryptokey = data[4]
-			# QuoteServerLog(	server=this,
-			# 				user=this,
-			# 				price=price,
-			# 				stock_symbol=stock_symbol,
-			# 				quoteServerTime=quoteServerTime,
-			# 				cryptokey=cryptokey).save()
-			# return price
-			return Decimal(1.0)
+			receivedData = repr(data)
+			receivedData = receivedData[1:].replace("'", "")
+			data = receivedData.split(",")
+			price = Decimal(data[0])
+			quoteServerTime = int(data[3])
+			cryptokey = data[4]
+			QuoteServerLog(	server=this,
+							user=this,
+							price=price,
+							stock_symbol=stock_symbol,
+							quoteServerTime=quoteServerTime,
+							cryptokey=cryptokey).save()
+			return price
 
 	def get_stock_account(self, stock_symbol):
 		try:
@@ -102,8 +104,6 @@ class StockAccount(models.Model):
 		self.funds -= amount/self.user.get_quote(self.stock_symbol)
 		self.save()
 
-
-
 class UncomittedTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3, null=True)
@@ -154,7 +154,6 @@ class SetTransaction(models.Model):
 	def set_trigger(self, amount):
 		self.triggerAmount = amount
 		self.save()
-
 
 class SetBuy(SetTransaction):
 	@classmethod
