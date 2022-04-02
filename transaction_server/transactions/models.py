@@ -2,9 +2,17 @@ from django.db import models
 # from django.contrib.auth.models import User
 from django.db.models.signals import pre_init
 from django.dispatch import receiver
+from django.conf import settings
 from datetime import *
 from decimal import *
+import redis
 
+redis_instance = redis.StrictRedis(
+	host=settings.REDIS_HOST,
+	port=settings.REDIS_PORT,
+	db=0,
+	decode_responses=True
+)
 
 def cancel_if_not_none(item):
 	if item != None: item.cancel()
@@ -24,6 +32,26 @@ class User(models.Model):
 		AccountTransactionLog(server='this', user=self, actions='REMOVE', funds=amount).save()
 
 	def get_quote(self, stock_symbol):
+		cached_quote = redis_instance.mget(stock_symbol)
+		if cached_quote:
+			QuoteServerLog(
+				server='this',
+				user=self,
+				stock_symbol=stock_symbol,
+				price=cached_quote['price'],
+				quoteServerTime=cached_quote['quote_server_time'],
+				cryptokey=cached_quote['cryptokey'],
+			)
+			return cached_quote.price
+		
+		quote = {
+			'price': Decimal(0.00),
+			'quote_server_time': datetime.now(),
+			'cryptokey': '',
+		}
+		redis_instance.set(stock_symbol, quote)
+		return quote['price']
+
 			# returndata = []
 			# HOST = '192.168.4.2'
 			# PORT = 4444
@@ -47,7 +75,7 @@ class User(models.Model):
 			# 				quoteServerTime=quoteServerTime,
 			# 				cryptokey=cryptokey).save()
 			# return price
-			return Decimal(1.0)
+			# return Decimal(1.0)
 
 	def get_stock_account(self, stock_symbol):
 		try:

@@ -132,8 +132,11 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = "redis://redis:6379"
-CELERY_RESULT_BACKEND = "redis://redis:6379"
+REDIS_HOST = environ.get('REDIS_HOST')
+REDIS_PORT = environ.get('REDIS_PORT')
+
+CELERY_BROKER_URL = "redis://{}:{}".format(REDIS_HOST, REDIS_PORT)
+CELERY_RESULT_BACKEND = "redis://{}:{}".format(REDIS_HOST, REDIS_PORT)
 
 CELERY_BEAT_SCHEDULE = {
     "check_triggers": {
