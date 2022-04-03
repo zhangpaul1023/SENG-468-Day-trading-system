@@ -144,3 +144,6 @@ CELERY_BEAT_SCHEDULE = {
         "schedule": crontab(minute="*/1"),
     },
 }
+
+QUOTE_SERVER_HOST = environ.get('QUOTE_SERVER_HOST')
+QUOTE_SERVER_PORT = environ.get('QUOTE_SERVER_PORT')
