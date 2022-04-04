@@ -13,7 +13,10 @@ from decimal import *
 
 
 def create_user(request, userid):
-	User(userid=userid).save()
+	try:
+		User.objects.get(userid=userid)
+	except UncommittedBuy.DoesNotExist:
+		User(userid=userid).save()
 	return HttpResponse("success")
 
 def add(request, userid, amount):
