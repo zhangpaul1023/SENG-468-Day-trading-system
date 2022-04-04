@@ -89,7 +89,7 @@ def cancel_buy(request, userid):
 
 def cancel_sell(request, userid):
 	user = User.objects.get(userid=userid)
-	sell = User.get_recent_sell()
+	sell = user.get_recent_sell()
 	if sell == None:
 		ErrorEventLog(server=gethostname(), user=user, command='CANCEL_SELL').save()
 		return HttpResponse("failure")
