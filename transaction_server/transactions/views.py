@@ -15,7 +15,7 @@ from decimal import *
 def create_user(request, userid):
 	try:
 		User.objects.get(userid=userid)
-	except UncommittedBuy.DoesNotExist:
+	except User.DoesNotExist:
 		User(userid=userid).save()
 	return HttpResponse("success")
 
