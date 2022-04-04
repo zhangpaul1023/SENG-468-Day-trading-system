@@ -12,6 +12,7 @@ export default function () {
   const user = `user${__VU}`;
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
+  http.get(`http://localhost:8000/transactions/create_user/${user}/`); sleep(1);
   while (true) {
     http.get(`http://localhost:8000/transactions/add/${user}/63511.53/`); sleep(1);
     http.get(`http://localhost:8000/transactions/quote/${user}/${symbol}/`); sleep(1);
