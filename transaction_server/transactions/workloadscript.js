@@ -8,8 +8,11 @@ export default function () {
     }
     return `${randomLetter()}${randomLetter()}${randomLetter()}`;
   }
-
-  const user = `user${__VU}`;
+  let min = -100;
+  let counter = 10;
+  while(counter-- > 0) {
+  min += 100;
+  const user = `user${__VU + min}`;
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
   http.get(`http://localhost:8000/transactions/create_user/${user}/`);
@@ -113,4 +116,5 @@ export default function () {
   http.get(`http://localhost:8000/transactions/cancel_buy/${user}/`); 
   http.get(`http://localhost:8000/transactions/sell/${user}/${symbol}/664.10/`); 
   //http.get(`http://localhost:8000/transactions/dumplog/./testlog`); 
+  }
 }
