@@ -20,6 +20,7 @@ def cancel_if_not_none(item):
 	if item != None: item.cancel()
 
 class User(models.Model):
+	
 	userid = models.CharField(max_length=64)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, default=Decimal(0.0))
 
@@ -157,10 +158,11 @@ class UncommittedBuy(UncomittedTransaction):
 		return "\
 		<userCommand>\
 			<timestamp>" + str(self.timestamp) + "</timestamp>\
-			<server>" + str(self.user.get_quote(stock_symbol).server) + "</server>\
-			<transactionNum>1</transactionNum>\
+			<server>" + str(gethostname()) + "</server>\
+			<transactionNum></transactionNum>\
 			<command>UNCOMMITED_BUY</command>\
 			<username>" + str(self.user.get_stock_account(stock_symbol)) + "</username>\
+			<stockSymbol>" + str(stock_symbol) + "</stocksymbol>\
 		</userCommand>\
 		"
 
@@ -179,6 +181,16 @@ class UncommittedSell(UncomittedTransaction):
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
 		self.delete()
+	def UncommitedSELLXML (self):
+		return "\
+		<userCommand>\
+			<timestamp>" + str(self.timestamp) + "</timestamp>\
+			<server>" + str(gethostname()) + "</server>\
+			<transactionNum></transactionNum>\
+			<command>UNCOMMITED_SELL</command>\
+			<username>" + str(self.user.get_stock_account(stock_symbol)) + "</username>\
+		</userCommand>\
+		"
 
 class SetTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -207,6 +219,17 @@ class SetBuy(SetTransaction):
 	def cancel(self):
 		self.user.add_funds(self.funds)
 		self.delete()
+	def SetBuyXML (self):
+		return "\
+		<userCommand>\
+			<timestamp>" + str(self.timestamp) + "</timestamp>\
+			<server>" + str(gethostname()) + "</server>\
+			<transactionNum></transactionNum>\
+			<command>SET_BUY</command>\
+			<username>" + str(self.user.get_stock_account(stock_symbol)) + "</username>\
+			<stockSymbol>" + str(stock_symbol) + "</stocksymbol>\
+		</userCommand>\
+		"
 
 class SetSell(SetTransaction):
 	@classmethod
@@ -225,6 +248,17 @@ class SetSell(SetTransaction):
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
 		self.delete()
+	def SetSellXML (self):
+		return "\
+		<userCommand>\
+			<timestamp>" + str(self.timestamp) + "</timestamp>\
+			<server>" + str(gethostname()) + "</server>\
+			<transactionNum></transactionNum>\
+			<command>SET_SELL</command>\
+			<username>" + str(self.user.get_stock_account(stock_symbol)) + "</username>\
+			<stockSymbol>" + str(stock_symbol) + "</stocksymbol>\
+		</userCommand>\
+		"
 
 # Create your models here.
 class Command(models.TextChoices):
