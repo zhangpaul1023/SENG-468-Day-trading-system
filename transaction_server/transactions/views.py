@@ -170,4 +170,6 @@ def dumplog(request, userid, filename):
 	my_str = ''
 	for log in Log.objects.filter(user=user):
 		my_str += str(log)
-	return HttpResponse(my_str)
+       # print(my_str)
+        return HttpResponse(my_str)
+
