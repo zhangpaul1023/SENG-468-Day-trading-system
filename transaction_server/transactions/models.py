@@ -153,6 +153,17 @@ class UncommittedBuy(UncomittedTransaction):
 		self.user.add_funds(self.funds)
 		self.delete()
 
+	def UncommitedBuyXML (self):
+		return "\
+		<userCommand>\
+			<timestamp>" + str(self.timestamp) + "</timestamp>\
+			<server>" + str(self.user.get_quote(stock_symbol).server) + "</server>\
+			<transactionNum>1</transactionNum>\
+			<command>UNCOMMITED_BUY</command>\
+			<username>" + str(self.user.get_stock_account(stock_symbol)) + "</username>\
+		</userCommand>\
+		"
+
 class UncommittedSell(UncomittedTransaction):
 	@classmethod
 	def create(cls, user, stock_symbol, funds):
