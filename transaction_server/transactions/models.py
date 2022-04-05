@@ -113,6 +113,19 @@ class User(models.Model):
 		except SetSell.DoesNotExist:
 			pass
 		return set
+	def dumplog(self):
+		my_str = ''
+		for log in UserCommandLog.objects.filter(user=user):
+			my_str += str(log)
+		for log in QuoteServerLog.objects.filter(user=user):
+			my_str += str(log)
+		for log in AccountTransactionLog.objects.filter(user=user):
+			my_str += str(log)
+		for log in SystemEventLog.objects.filter(user=user):
+			my_str += str(log)
+		for log in ErrorEventLog.objects.filter(user=user):
+			my_str += str(log)
+		return my_str
 
 class StockAccount(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -250,46 +263,34 @@ class Log(models.Model):
 	actions = models.CharField(choices=Action.choices, max_length=6)
 	error_message = models.CharField(max_length=64, null=True)
 	def __str__(self):
-		timestamp_str = ''
-		server_str = ''
-		transactionNum_str = ''
-		price_str = ''
-		command_str = ''
-		userid_str = ''
-		stock_symbol_str = ''
-		filename_str = ''
-		funds_str = ''
-		quoteServerTime_str = ''
-		cryptokey = ''
-		action_str = ''
-		error_message=''
-
+		my_str = ''
+		my_str += '<transactionNum>0</transactionNum>'
 		if self.timestamp != None:
-			timestamp_str = '<timestamp>{}</timestamp>'.format(self.timestamp)
+			my_str += '<timestamp>{}</timestamp>'.format(self.timestamp)
 		if self.server != None:
-			server_str = '<server>{}</server>'.format(self.server)
+			my_str +=  '<server>{}</server>'.format(self.server)
 		if self.command != None:
-			command_str = '<command>{}</command>'.format(self.command)
+			my_str +=  '<command>{}</command>'.format(self.command)
 		if self.user.userid != None:
-			userid_str = '<username>{}</username>'.format(self.user.userid)
+			my_str +=  '<username>{}</username>'.format(self.user.userid)
 		if self.price != None:
-			price_str = '<price>{}</price>'.format(self.price)
+			my_str +=  '<price>{}</price>'.format(self.price)
 		if self.stock_symbol != None:
-			stock_symbol_str = '<stockSymbol>{}</stockSymbol>'.format(self.stock_symbol)
+			my_str +=  '<stockSymbol>{}</stockSymbol>'.format(self.stock_symbol)
 		if self.quoteServerTime != None:
-			quoteServerTime_str = '<quoteServerTime>{}</quoteServerTime>'.format(self.quoteServerTime)
+			my_str +=  '<quoteServerTime>{}</quoteServerTime>'.format(self.quoteServerTime)
 		if self.cryptokey != None:
-			cryptokey_str = '<cryptokey>{}</cryptokey>'.format(self.cryptokey)
+			my_str +=  '<cryptokey>{}</cryptokey>'.format(self.cryptokey)
 		if self.actions != None:
-			action_str = '<action>{}</action>'.format(self.actions)
+			my_str += '<action>{}</action>'.format(self.actions)
 		if self.error_message != None:
-			action_str = '<errorMessage>{}</errorMessage>'.format(self.error_message)
+			my_str +=  '<errorMessage>{}</errorMessage>'.format(self.error_message)
 		if self.filename != None:
-			filename_str = '<filename>{}</filename>'.format(self.filename)
+			my_str +=  '<filename>{}</filename>'.format(self.filename)
 		if self.funds != None:
-			funds_str = '<funds>{}</funds>'.format(self.funds)
+			my_str +=  '<funds>{}</funds>'.format(self.funds)
 
-		return timestamp_str + server_str + transactionNum_str + price_str + command_str + userid_str + stock_symbol_str + filename_str + funds_str + quoteServerTime_str + cryptokey + action_str + error_message
+		return my_str
 
 class UserCommandLog(Log):
         def __str__(self):
