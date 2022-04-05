@@ -168,6 +168,6 @@ def cancel_set_sell(request, userid, stock_symbol):
 def dumplog(request, userid, filename):
 	user = User.objects.get(userid=userid)
 	my_str = ''
-	for log in Log.objects.get(userid=userid):
+	for log in Log.objects.filter(user=user):
 		my_str += str(log)
 	return HttpResponse(my_str)

@@ -289,19 +289,24 @@ class Log(models.Model):
 		if self.funds != None:
 			funds_str = '<funds>{}</funds>'.format(self.funds)
 
-		return timestamp_str + server_str + transactionNum_str + price_str + command_str + userid_str + stock_symbol_str + filename_str + funds_str + quoteServerTime_str + cryptokey + action_str + error_message=''
+		return timestamp_str + server_str + transactionNum_str + price_str + command_str + userid_str + stock_symbol_str + filename_str + funds_str + quoteServerTime_str + cryptokey + action_str + error_message
 
 class UserCommandLog(Log):
-	return '<userCommand>' + super().__str__ + '</userCommand>'
+        def __str__(self):
+            return '<userCommand>' + super().__str__() + '</userCommand>'
 
 class QuoteServerLog(Log):
-	return '<quoteServer>' + super().__str__ + '</quoteServer>'
+        def __str__(self):
+            return '<quoteServer>' + super().__str__() + '</quoteServer>'
 
 class AccountTransactionLog(Log):
-	return '<accountTransaction>' + super().__str__ + '</accountTransaction>'
+        def __str__(self):
+            return '<accountTransaction>' + super().__str__() + '</accountTransaction>'
 
 class SystemEventLog(Log):
-	return '<systemEvent>' + super().__str__ + '</systemEvent>'
+        def __str__(self):
+            return '<systemEvent>' + super().__str__() + '</systemEvent>'
 
 class ErrorEventLog(Log):
-	return '<errorEvent>' + super().__str__ + '</errorEvent>'
+        def __str__(self):
+            return '<errorEvent>' + super().__str__() + '</errorEvent>'
