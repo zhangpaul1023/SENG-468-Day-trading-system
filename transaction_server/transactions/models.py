@@ -233,40 +233,75 @@ class Command(models.TextChoices):
 		CANCEL_SET_SELL = 'CANCEL_SET_SELL'
 		DUMPLOG = 'DUMPLOG'
 		DISPLAY_SUMMARY = 'DISPLAY_SUMMARY'
-
+class Action(models.TextChoices):
+		ADD = 'ADD'
+		REMOVE = 'REMOVE'
 class Log(models.Model):
 	timestamp = models.DateTimeField(auto_now=True)
 	server = models.CharField(max_length=64)
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-class UserCommandLog(Log):
-	command = models.CharField(choices=Command.choices, max_length=16)
+	command = models.CharField(choices=Command.choices, max_length=16, null=True)
 	stock_symbol = models.CharField(max_length=3, null=True)
 	filename = models.CharField(max_length=64, null=True)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, null=True)
-
-class QuoteServerLog(Log):
 	price = models.DecimalField(decimal_places=2, max_digits=24, null=True)
-	stock_symbol = models.CharField(max_length=3, null=True)
 	quoteServerTime = models.DecimalField(decimal_places=0, max_digits=24, null=True)
 	cryptokey = models.CharField(max_length=64, null=True)
+	actions = models.CharField(choices=Action.choices, max_length=6)
+	error_message = models.CharField(max_length=64, null=True)
+	def __str__(self):
+		timestamp_str = ''
+		server_str = ''
+		transactionNum_str = ''
+		price_str = ''
+		command_str = ''
+		userid_str = ''
+		stock_symbol_str = ''
+		filename_str = ''
+		funds_str = ''
+		quoteServerTime_str = ''
+		cryptokey = ''
+		action_str = ''
+		error_message=''
+
+		if self.timestamp != None:
+			timestamp_str = '<timestamp>{}</timestamp>'.format(self.timestamp)
+		if self.server != None:
+			server_str = '<server>{}</server>'.format(self.server)
+		if self.command != None:
+			command_str = '<command>{}</command>'.format(self.command)
+		if self.user.userid != None:
+			userid_str = '<username>{}</username>'.format(self.user.userid)
+		if self.price != None:
+			price_str = '<price>{}</price>'.format(self.price)
+		if self.stock_symbol != None:
+			stock_symbol_str = '<stockSymbol>{}</stockSymbol>'.format(self.stock_symbol)
+		if self.quoteServerTime != None:
+			quoteServerTime_str = '<quoteServerTime>{}</quoteServerTime>'.format(self.quoteServerTime)
+		if self.cryptokey != None:
+			cryptokey_str = '<cryptokey>{}</cryptokey>'.format(self.cryptokey)
+		if self.actions != None:
+			action_str = '<action>{}</action>'.format(self.actions)
+		if self.error_message != None:
+			action_str = '<errorMessage>{}</errorMessage>'.format(self.error_message)
+		if self.filename != None:
+			filename_str = '<filename>{}</filename>'.format(self.filename)
+		if self.funds != None:
+			funds_str = '<funds>{}</funds>'.format(self.funds)
+
+		return timestamp_str + server_str + transactionNum_str + price_str + command_str + userid_str + stock_symbol_str + filename_str + funds_str + quoteServerTime_str + cryptokey + action_str + error_message=''
+
+class UserCommandLog(Log):
+	return '<userCommand>' + super().__str__ + '</userCommand>'
+
+class QuoteServerLog(Log):
+	return '<quoteServer>' + super().__str__ + '</quoteServer>'
 
 class AccountTransactionLog(Log):
-	class Action(models.TextChoices):
-		ADD = 'ADD'
-		REMOVE = 'REMOVE'
-	actions = models.CharField(choices=Action.choices, max_length=6)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	return '<accountTransaction>' + super().__str__ + '</accountTransaction>'
 
 class SystemEventLog(Log):
-	command = models.CharField(choices=Command.choices, max_length=16)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	filename = models.CharField(max_length=64, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24)
+	return '<systemEvent>' + super().__str__ + '</systemEvent>'
 
 class ErrorEventLog(Log):
-	command = models.CharField(choices=Command.choices, max_length=16)
-	stock_symbol = models.CharField(max_length=3, null=True)
-	filename = models.CharField(max_length=64, null=True)
-	funds = models.DecimalField(decimal_places=2, max_digits=24, null=True)
-	error_message = models.CharField(max_length=64, null=True)
+	return '<errorEvent>' + super().__str__ + '</errorEvent>'

@@ -165,3 +165,9 @@ def cancel_set_sell(request, userid, stock_symbol):
 		sell.cancel()
 		UserCommandLog(server=gethostname(), user=user, command='CANCEL_SET_SELL', stock_symbol=stock_symbol).save()
 		return HttpResponse("success")
+def dumplog(request, userid, filename):
+	user = User.objects.get(userid=userid)
+	my_str = ''
+	for log in Log.objects.get(userid=userid):
+		my_str += str(log)
+	return HttpResponse(my_str)
