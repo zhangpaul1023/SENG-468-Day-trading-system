@@ -204,8 +204,8 @@ def cancel_set_sell(request, userid, stock_symbol):
 # 	for log in ErrorEventLog.objects.all():
 # 		my_str += str(log)
 # 	user.increment_transaction_number()
-return my_str
-def dumpLog(transaction_num=user.transaction_num,request):
+# return my_str
+def dumplog(request):
 	# my_str = ''
 	print('<?xml version="1.0"?>')
 	print('<log>')
