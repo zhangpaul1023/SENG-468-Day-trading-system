@@ -275,7 +275,7 @@ class Log(models.Model):
 		if self.transaction_num != None:
 			my_str += '<transactionNum>{}</transactionNum>'.format(self.transaction_num)
 		if self.timestamp != None:
-			my_str += '<timestamp>{}</timestamp>'.format(self.timestamp.timestamp())
+			my_str += '<timestamp>{}</timestamp>'.format(int(round(self.timestamp.timestamp())))
 		if self.server != None:
 			my_str +=  '<server>{}</server>'.format(self.server)
 		if self.command != None:
