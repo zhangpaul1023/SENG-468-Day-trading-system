@@ -22,7 +22,7 @@ def cancel_if_not_none(item):
 class User(models.Model):
 	userid = models.CharField(max_length=64)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, default=Decimal(0.0))
-	transaction_num = models.IntegerField(default=0)
+	transaction_num = models.IntegerField(default=1)
 
 
 	def add_funds(self, amount):
@@ -268,14 +268,14 @@ class Log(models.Model):
 	price = models.DecimalField(decimal_places=2, max_digits=24, null=True)
 	quoteServerTime = models.DecimalField(decimal_places=0, max_digits=24, null=True)
 	cryptokey = models.CharField(max_length=64, null=True)
-	actions = models.CharField(choices=Action.choices, max_length=6)
+	actions = models.CharField(choices=Action.choices, max_length=6, null=True)
 	error_message = models.CharField(max_length=64, null=True)
 	def __str__(self):
 		my_str = ''
 		if self.transaction_num != None:
 			my_str += '<transactionNum>{}</transactionNum>'.format(self.transaction_num)
 		if self.timestamp != None:
-			my_str += '<timestamp>{}</timestamp>'.format(int(round(self.timestamp.timestamp())))
+			my_str += '<timestamp>{}</timestamp>'.format(int(round(self.timestamp.timestamp() * 1000)))
 		if self.server != None:
 			my_str +=  '<server>{}</server>'.format(self.server)
 		if self.command != None:
