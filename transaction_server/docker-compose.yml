@@ -6,8 +6,13 @@ version: "3.9"
 services:
   lb:
     hostname: lb
-    ports: 8080:8080
+    ports:
+      - 8080:80
     build: ./nginx
+    depends_on:
+      - web0
+      - web1
+      - web2
   db0:
     hostname: db0
     image: postgres
@@ -81,7 +86,7 @@ services:
   web1:
     hostname: web1
     build: .
-    command: python manage.py runserver 0.0.0.0:8001
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
@@ -103,7 +108,7 @@ services:
   web2:
     hostname: web2
     build: .
-    command: python manage.py runserver 0.0.0.0:8002
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
