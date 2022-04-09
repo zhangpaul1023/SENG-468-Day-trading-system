@@ -17,7 +17,7 @@ def create_user(request, userid):
 		User.objects.get(userid=userid)
 	except User.DoesNotExist:
 		User(userid=userid).save()
-		return HttpResponse("success")
+	return HttpResponse("success")
 
 def add(request, userid, amount):
 	user = User.objects.get(userid=userid)
