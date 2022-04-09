@@ -18,20 +18,19 @@ export default function () {
     return `${randomLetter()}${randomLetter()}${randomLetter()}`;
   }
   function randomNumer() {
-    return Math.floor(Math.random() 100);
+    return Math.floor(Math.random() * 100);
   }
 
   let state = ENTRY;
-  let ENTRY = randomSymbol();
-  const user = `user${__VU + min}`;
+  const user = `user${__VU}`;
   let symbol = randomSymbol();
+  let rand = 0;
   http.get(`http://localhost:8000/transactions/create_user/${user}/`);
-
 
   while(state != EXIT) {
     switch(state) {
       case ENTRY:
-        let rand = randomNumer();
+        rand = randomNumer();
         if (rand < 34) {
           state = ADD;
         } else if (rand < 68) {
@@ -41,21 +40,21 @@ export default function () {
         }
         break;
       case QUOTE:
-        let rand = randomNumer();
+        rand = randomNumer();
         symbol = randomSymbol();
         http.get(`http://localhost:8000/transactions/quote/${user}/${symbol}/`);
-        if () {
+        if (rand < 25) {
           state = QUOTE;
-        } else if (rand < 34) {
+        } else if (rand < 50) {
           state = DISPLAY_SUMMARY;
-        } else if (rand < 68) {
+        } else if (rand < 75) {
           state = ADD;
         } else {
-          state = BUY;
+          state = TRANSACTION;
         } 
         break;
       case ADD:
-        let rand = randomNumer();
+        rand = randomNumer();
         http.get(`http://localhost:8000/transactions/add/${user}/0.00/`);
         if (rand < 50) {
           state = QUOTE;
@@ -64,8 +63,8 @@ export default function () {
         }
         break;
       case DISPLAY_SUMMARY:
-        let rand = randomNumer();
-        http.get(`http://localhost:8000/transactions/display_summary/${user}/`);
+        rand = randomNumer();
+        //http.get(`http://localhost:8000/transactions/display_summary/${user}/`);
         if (rand < 50) {
           state = QUOTE;
         } else {
@@ -73,7 +72,7 @@ export default function () {
         }
         break;
       case TRANSACTION:
-        let rand = randomNumer();
+        rand = randomNumer();
         http.get(`http://localhost:8000/transactions/buy/${user}/${symbol}/0.00/`);
         if (rand < 50) {
           state = COMMIT;
@@ -82,7 +81,7 @@ export default function () {
         }
         break;
       case CANCEL:
-        let rand = randomNumer();
+        rand = randomNumer();
         http.get(`http://localhost:8000/transactions/cancel_buy/${user}/`);
         if (rand < 50) {
           state = DISPLAY_SUMMARY;
@@ -91,7 +90,7 @@ export default function () {
         }
         break;
       case COMMIT:
-        let rand = randomNumer();
+        randomNumer();
         http.get(`http://localhost:8000/transactions/commit_buy/${user}/`);
         if (rand < 50) {
           state = DISPLAY_SUMMARY;
