@@ -83,8 +83,8 @@ DATABASES = {
         'NAME': environ.get('POSTGRES_NAME'),
         'USER': environ.get('POSTGRES_USER'),
         'PASSWORD': environ.get('POSTGRES_PASSWORD'),
-        'HOST': 'database',
-        'PORT': 5432,
+        'HOST': environ.get('POSTGRES_HOST'),
+        'PORT': environ.get('POSTGRES_PORT'),
     }
 }
 
