@@ -118,32 +118,32 @@ class User(models.Model):
 		return set
 	def dumplog(self):
 		my_str = ''
-		for log in UserCommandLog.objects.filter(user=user):
+		for log in UserCommandLog.objects.filter(user=self):
 			my_str += str(log)
-		for log in QuoteServerLog.objects.filter(user=user):
+		for log in QuoteServerLog.objects.filter(user=self):
 			my_str += str(log)
-		for log in AccountTransactionLog.objects.filter(user=user):
+		for log in AccountTransactionLog.objects.filter(user=self):
 			my_str += str(log)
-		for log in SystemEventLog.objects.filter(user=user):
+		for log in SystemEventLog.objects.filter(user=self):
 			my_str += str(log)
-		for log in ErrorEventLog.objects.filter(user=user):
+		for log in ErrorEventLog.objects.filter(user=self):
 			my_str += str(log)
 		return my_str
 	def display_summary(self):
-		my_str = '{} has ${}'.format(self.userid, self.funds)
-		for sum in StockAccount.objects.filter(user=user):
+		my_str = '{} has ${}\n'.format(self.userid, self.funds)
+		for sum in StockAccount.objects.filter(user=self):
 			my_str += str(sum)
 			my_str += '\n'
-		for sum in UncommittedBuy.objects.filter(user=user):
+		for sum in UncommittedBuy.objects.filter(user=self):
 			my_str += str(sum)
 			my_str += '\n'
-		for sum in UncommittedSell.objects.filter(user=user):
+		for sum in UncommittedSell.objects.filter(user=self):
 			my_str += str(sum)
 			my_str += '\n'
-		for sum in SetBuy.objects.filter(user=user):
+		for sum in SetBuy.objects.filter(user=self):
 			my_str += str(sum)
 			my_str += '\n'
-		for sum in SetSell.objects.filter(user=user):
+		for sum in SetSell.objects.filter(user=self):
 			my_str += str(sum)
 			my_str += '\n'
 		return my_str + self.dumplog()
