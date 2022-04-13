@@ -140,8 +140,6 @@ services:
     hostname: celery0
     build: .
     command: celery -A transaction_server worker -l info
-    volumes:
-      - ./c0:/code
     environment:
       - POSTGRES_HOST=db0
       - POSTGRES_PORT=5432
@@ -162,8 +160,6 @@ services:
     hostname: celery1
     build: .
     command: celery -A transaction_server worker -l info
-    volumes:
-      - ./c1:/code
     environment:
       - POSTGRES_HOST=db1
       - POSTGRES_PORT=5432
@@ -184,8 +180,6 @@ services:
     hostname: celery2
     build: .
     command: celery -A transaction_server worker -l info
-    volumes:
-      - ./c2:/code
     environment:
       - POSTGRES_HOST=db2
       - POSTGRES_PORT=5432
@@ -206,8 +200,6 @@ services:
     hostname: celery-beat0
     build: .
     command: celery -A transaction_server beat -l info
-    volumes:
-      - ./c0:/code
     environment:
       - POSTGRES_HOST=db0
       - POSTGRES_PORT=5432
@@ -228,8 +220,6 @@ services:
     hostname: celery-beat1
     build: .
     command: celery -A transaction_server beat -l info
-    volumes:
-      - ./c1:/code
     environment:
       - POSTGRES_HOST=db1
       - POSTGRES_PORT=5432
@@ -250,8 +240,6 @@ services:
     hostname: celery-beat2
     build: .
     command: celery -A transaction_server beat -l info
-    volumes:
-      - ./c2:/code
     environment:
       - POSTGRES_HOST=db2
       - POSTGRES_PORT=5432
