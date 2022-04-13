@@ -22,16 +22,18 @@ def cancel_if_not_none(item):
 class User(models.Model):
 	userid = models.CharField(max_length=64)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, default=Decimal(0.0))
+	transaction_num = models.IntegerField(default=0)
+
 
 	def add_funds(self, amount):
 		self.funds += amount
 		self.save()
-		AccountTransactionLog(server=gethostname(), user=self, actions='ADD', funds=amount).save()
+		AccountTransactionLog(server=gethostname(), user=self, actions='ADD', funds=amount, transaction_num=self.transaction_num).save()
 	
 	def remove_funds(self, amount):
 		self.funds -= amount
 		self.save()
-		AccountTransactionLog(server=gethostname(), user=self, actions='REMOVE', funds=amount).save()
+		AccountTransactionLog(server=gethostname(), user=self, actions='REMOVE', funds=amount, transaction_num=self.transaction_num).save()
 
 	def get_quote(self, stock_symbol):
 		
@@ -72,7 +74,8 @@ class User(models.Model):
 						price=price,
 						stock_symbol=stock_symbol,
 						quoteServerTime=quoteServerTime,
-						cryptokey=cryptokey).save()
+						cryptokey=cryptokey,
+						transaction_num=self.transaction_num).save()
 		return price
 
 	def get_stock_account(self, stock_symbol):
@@ -126,6 +129,10 @@ class User(models.Model):
 		for log in ErrorEventLog.objects.filter(user=user):
 			my_str += str(log)
 		return my_str
+	
+	def increment_transaction_number(self):
+		self.transaction_num += 1
+		self.save()
 
 class StockAccount(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -204,7 +211,7 @@ class SetBuy(SetTransaction):
 		return self.triggerAmount != None and self.user.get_stock_account(self.stock_symbol).get_funds() <= self.triggerAmount
 	def commit(self):
 		UncommittedBuy.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
-		SystemEventLog(server=gethostname(),user=self.user,command='SET_BUY_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds).save()
+		SystemEventLog(server=gethostname(),user=self.user,command='SET_BUY_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds, transaction_num=self.user.transaction_num).save()
 		self.delete()
 	def cancel(self):
 		self.user.add_funds(self.funds)
@@ -222,7 +229,7 @@ class SetSell(SetTransaction):
 		return self.triggerAmount != None and self.user.get_stock_account(self.stock_symbol).get_funds() >= self.triggerAmount
 	def commit(self):
 		UncommittedSell.create(user=self.user,stock_symbol=self.stock_symbol,funds=self.funds).commit()
-		SystemEventLog(server=gethostname(),user=self.user,command='SET_SELL_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds).save()
+		SystemEventLog(server=gethostname(),user=self.user,command='SET_SELL_TRIGGER',stock_symbol=self.stock_symbol,funds=self.funds, transaction_num=self.user.transaction_num).save()
 		self.delete()
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
@@ -250,6 +257,7 @@ class Action(models.TextChoices):
 		ADD = 'ADD'
 		REMOVE = 'REMOVE'
 class Log(models.Model):
+	transaction_num = models.IntegerField()
 	timestamp = models.DateTimeField(auto_now=True)
 	server = models.CharField(max_length=64)
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -264,9 +272,10 @@ class Log(models.Model):
 	error_message = models.CharField(max_length=64, null=True)
 	def __str__(self):
 		my_str = ''
-		my_str += '<transactionNum>0</transactionNum>'
+		if self.transaction_num != None:
+			my_str += '<transactionNum>{}</transactionNum>'.format(self.transaction_num)
 		if self.timestamp != None:
-			my_str += '<timestamp>{}</timestamp>'.format(self.timestamp)
+			my_str += '<timestamp>{}</timestamp>'.format(int(round(self.timestamp.timestamp())))
 		if self.server != None:
 			my_str +=  '<server>{}</server>'.format(self.server)
 		if self.command != None:

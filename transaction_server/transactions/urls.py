@@ -21,5 +21,5 @@ urlpatterns = [
 	re_path(r'^set_sell_amount/(?P<userid>[A-Za-z0-9_]+)/(?P<stock_symbol>[A-Z]{1,3})/(?P<amount>\d*\.\d\d)/$', views.set_sell_amount),
 	re_path(r'^set_sell_trigger/(?P<userid>[A-Za-z0-9_]+)/(?P<stock_symbol>[A-Z]{1,3})/(?P<amount>\d*\.\d\d)/$', views.set_sell_trigger),
 	path('cancel_set_sell/<slug:userid>/<slug:stock_symbol>/', views.cancel_set_sell),
-        path('dumplog/<slug:userid>/<slug:filename>/', views.dumplog)
+        path('dumplog/', views.dumplog)
 ]
