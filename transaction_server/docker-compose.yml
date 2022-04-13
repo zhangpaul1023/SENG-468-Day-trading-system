@@ -4,6 +4,10 @@ version: "3.9"
 # https://docs.docker.com/samples/django/
 
 services:
+  lb:
+    hostname: lb
+    ports: 8080:8080
+    build: ./nginx
   db0:
     hostname: db0
     image: postgres
