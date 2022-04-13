@@ -2,3 +2,4 @@
 celerybeat-schedule
 transaction_server/transactions/migrations/*
 !transaction_server/transactions/migrations/__init__.py
+.DS_Store
