@@ -191,20 +191,10 @@ def cancel_set_sell(request, userid, stock_symbol):
 		UserCommandLog(transaction_num=user.transaction_num,server=gethostname(), user=user, command='CANCEL_SET_SELL', stock_symbol=stock_symbol).save()
 		user.increment_transaction_number()
 		return HttpResponse("success")
-# def dumpLog(transaction_num=user.transaction_num,request):
-# 	my_str = ''
-# 	for log in UserCommandLog.objects.all():
-# 		my_str += str(log)
-# 	for log in QuoteServerLog.objects.all():
-# 		my_str += str(log)
-# 	for log in AccountTransactionLog.objects.all():
-# 		my_str += str(log)
-# 	for log in SystemEventLog.objects.all():
-# 		my_str += str(log)
-# 	for log in ErrorEventLog.objects.all():
-# 		my_str += str(log)
-# 	user.increment_transaction_number()
-# return my_str
+def display_summary(request, userid):
+	user = User.objects.get(userid=userid)
+	UserCommandLog(transaction_num=user.transaction_num,server=gethostname(), user=user, command='DISPLAY_SUMMARY', stock_symbol=stock_symbol).save()
+	return HttpResponse(user.display_summary())
 def dumplog(request):
 	# my_str = ''
 	print('<?xml version="1.0"?>')

@@ -129,6 +129,24 @@ class User(models.Model):
 		for log in ErrorEventLog.objects.filter(user=user):
 			my_str += str(log)
 		return my_str
+	def display_summary(self):
+		my_str = '{} has ${}'.format(self.userid, self.funds)
+		for sum in StockAccount.objects.filter(user=user):
+			my_str += str(sum)
+			my_str += '\n'
+		for sum in UncommittedBuy.objects.filter(user=user):
+			my_str += str(sum)
+			my_str += '\n'
+		for sum in UncommittedSell.objects.filter(user=user):
+			my_str += str(sum)
+			my_str += '\n'
+		for sum in SetBuy.objects.filter(user=user):
+			my_str += str(sum)
+			my_str += '\n'
+		for sum in SetSell.objects.filter(user=user):
+			my_str += str(sum)
+			my_str += '\n'
+		return my_str + self.dumplog()
 	
 	def increment_transaction_number(self):
 		self.transaction_num += 1
@@ -147,6 +165,8 @@ class StockAccount(models.Model):
 	def remove_funds(self, amount):
 		self.funds -= amount/self.user.get_quote(self.stock_symbol)
 		self.save()
+	def __str__(self):
+		return '{} owns ${} of {}'.format(self.user.userid, self.stock_symbol, self.funds)
 
 class UncomittedTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -172,6 +192,8 @@ class UncommittedBuy(UncomittedTransaction):
 	def cancel(self):
 		self.user.add_funds(self.funds)
 		self.delete()
+	def __str__(self):
+		return '{} has not committed buy of ${} worth of {}'.format(self.user.userid, self.funds, self.stock_symbol)
 
 class UncommittedSell(UncomittedTransaction):
 	@classmethod
@@ -188,6 +210,8 @@ class UncommittedSell(UncomittedTransaction):
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
 		self.delete()
+	def __str__(self):
+		return '{} has not committed sell of ${} worth of {}'.format(self.user.userid, self.funds, self.stock_symbol)
 
 class SetTransaction(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -216,6 +240,8 @@ class SetBuy(SetTransaction):
 	def cancel(self):
 		self.user.add_funds(self.funds)
 		self.delete()
+	def __str__(self):
+		return '{user} has set buy of ${amount} worth of {symbol} that will trigger when {symbol} = {trigger}'.format(user=self.user.userid, amount=self.funds, symbol=self.stock_symbol, trigger=self.triggerAmount)
 
 class SetSell(SetTransaction):
 	@classmethod
@@ -234,6 +260,8 @@ class SetSell(SetTransaction):
 	def cancel(self):
 		self.user.get_stock_account(self.stock_symbol).add_funds(self.funds)
 		self.delete()
+	def __str__(self):
+		return '{user} has set sell of ${amount} worth of {symbol} that will trigger when {symbol} = {trigger}'.format(user=self.user.userid, amount=self.funds, symbol=self.stock_symbol, trigger=self.triggerAmount)
 
 # Create your models here.
 class Command(models.TextChoices):
