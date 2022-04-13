@@ -4,21 +4,49 @@ version: "3.9"
 # https://docs.docker.com/samples/django/
 
 services:
-  database:
+  db0:
     image: postgres
     command: postgres -c 'max_connections=1000'
     ports:
       - 5432:5432
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./data/db:/var/lib/postgresql/data
+      - ./init0.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data/db0:/var/lib/postgresql/data
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     stdin_open: true
     tty: true
-  web:
+  db1:
+    image: postgres
+    command: postgres -c 'max_connections=1000'
+    ports:
+      - 5433:5432
+    volumes:
+      - ./init1.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data/db1:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    stdin_open: true
+    tty: true
+  db2:
+    image: postgres
+    command: postgres -c 'max_connections=1000'
+    ports:
+      - 5434:5432
+    volumes:
+      - ./init2.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data/db2:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    stdin_open: true
+    tty: true
+  web0:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -26,24 +54,72 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - POSTGRES_HOST=database
+      - POSTGRES_HOST=db0
       - POSTGRES_PORT=5432
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - REDIS_HOST=redis
+      - REDIS_HOST=cache0
       - REDIS_PORT=6379
       - QUOTE_SERVER_HOST=192.168.4.2
       - QUOTE_SERVER_PORT=4444
     depends_on:
-      - database
-      - redis # NEW
-  redis:
+      - db0
+      - cache0 # NEW
+  web1:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - .:/code
+    ports:
+      - "8001:8000"
+    environment:
+      - POSTGRES_HOST=db1
+      - POSTGRES_PORT=5433
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - REDIS_HOST=cache1
+      - REDIS_PORT=6380
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+    depends_on:
+      - db1
+      - cache1 # NEW
+  web2:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8002
+    volumes:
+      - .:/code
+    ports:
+      - "8002:8000"
+    environment:
+      - POSTGRES_HOST=db2
+      - POSTGRES_PORT=5434
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - REDIS_HOST=cache2
+      - REDIS_PORT=6381
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+    depends_on:
+      - db2
+      - cache2 # NEW
+  cache0:
     image: redis:alpine
     ports:
       - "6379:6379"
+  cache1:
+    image: redis:alpine
+    ports:
+      - "6380:6379"
+  cache2:
+    image: redis:alpine
+    ports:
+      - "6381:6379"
   
-  celery:
+  celery0:
     build: .
     command: celery -A transaction_server worker -l info
     volumes:
@@ -52,19 +128,62 @@ services:
       - DEBUG=1
       - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
       - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
-      - REDIS_HOST=redis
+      - REDIS_HOST=cache0
       - REDIS_PORT=6379
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - QUOTE_SERVER_HOST=192.168.4.2
       - QUOTE_SERVER_PORT=4444
-      - POSTGRES_HOST=database
+      - POSTGRES_HOST=db0
       - POSTGRES_PORT=5432
     depends_on:
-      - redis
+      - cache0
+
+  celery1:
+    build: .
+    command: celery -A transaction_server worker -l info
+    volumes:
+      - .:/code
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
+      - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+      - REDIS_HOST=cache1
+      - REDIS_PORT=6380
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+      - POSTGRES_HOST=db1
+      - POSTGRES_PORT=5433
+    depends_on:
+      - cache1
+
+
+  celery2:
+    build: .
+    command: celery -A transaction_server worker -l info
+    volumes:
+      - .:/code
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
+      - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+      - REDIS_HOST=cache2
+      - REDIS_PORT=6381
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+      - POSTGRES_HOST=db2
+      - POSTGRES_PORT=5434
+    depends_on:
+      - cache2
   
-  celery-beat:
+  celery-beat0:
     build: .
     command: celery -A transaction_server beat -l info
     volumes:
@@ -73,7 +192,7 @@ services:
       - DEBUG=1
       - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
       - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
-      - REDIS_HOST=redis
+      - REDIS_HOST=cache0
       - REDIS_PORT=6379
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
@@ -81,4 +200,41 @@ services:
       - QUOTE_SERVER_HOST=192.168.4.2
       - QUOTE_SERVER_PORT=4444
     depends_on:
-      - redis
+      - cache0
+  celery-beat1:
+    build: .
+    command: celery -A transaction_server beat -l info
+    volumes:
+      - .:/code
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
+      - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+      - REDIS_HOST=cache1
+      - REDIS_PORT=6380
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+    depends_on:
+      - cache1
+  celery-beat2:
+    build: .
+    command: celery -A transaction_server beat -l info
+    volumes:
+      - .:/code
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=dbaa1_i7%*3r9-=z-+_mz4r-!qeed@(-a_r(g@k8jo8y3r27%m
+      - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+      - REDIS_HOST=cache2
+      - REDIS_PORT=6381
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - QUOTE_SERVER_HOST=192.168.4.2
+      - QUOTE_SERVER_PORT=4444
+    depends_on:
+      - cache2
+
