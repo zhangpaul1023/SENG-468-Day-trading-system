@@ -1,5 +1,19 @@
 import http from 'k6/http';
-//test it without cache
+// test it without cache
+export const options = {
+  stages: [
+    { duration: '2m', target: 100 }, // below normal load
+    { duration: '5m', target: 100 },
+    { duration: '2m', target: 200 }, // normal load
+    { duration: '5m', target: 200 },
+    { duration: '2m', target: 300 }, // around the breaking point
+    { duration: '5m', target: 300 },
+    { duration: '2m', target: 400 }, // beyond the breaking point
+    { duration: '5m', target: 400 },
+    { duration: '10m', target: 0 }, // scale down. Recovery stage.
+  ],
+};
+
 
 export default function () {
   function randomSymbol() {
@@ -13,11 +27,16 @@ export default function () {
 	  timeout:'3600s'
   };
   const user = `user${__VU}`;
-  const host = 8000 + (__VU%3);
+  const host = 8000 + (__VU%3); //change the VU number accroding to how much server need to be test
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
-
-  http.get(`http://localhost:${host}/transactions/create_user/${user}/`,params);
+  
+  for (;;){
+	  var res = http.get(`http://localhost:${host}/transactions/create_user/${user}/`,params); 
+  	  if (res.status != 408 && res.status < 500) {
+	  	break;
+	  }
+  }
   http.get(`http://localhost:${host}/transactions/add/${user}/63511.53/`,params); 
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/276.83/`,params); 

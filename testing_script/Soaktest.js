@@ -1,16 +1,10 @@
 import http from 'k6/http';
-// test it without cache
+//test it without cache
 export const options = {
   stages: [
-    { duration: '2m', target: 100 }, // below normal load
-    { duration: '5m', target: 100 },
-    { duration: '2m', target: 200 }, // normal load
-    { duration: '5m', target: 200 },
-    { duration: '2m', target: 300 }, // around the breaking point
-    { duration: '5m', target: 300 },
-    { duration: '2m', target: 400 }, // beyond the breaking point
-    { duration: '5m', target: 400 },
-    { duration: '10m', target: 0 }, // scale down. Recovery stage.
+    { duration: '2m', target: 400 }, // ramp up to 400 users
+    { duration: '1h56m', target: 400 }, // stay at 400 for ~2 hours
+    { duration: '2m', target: 0 }, // scale down.
   ],
 };
 
@@ -27,7 +21,7 @@ export default function () {
 	  timeout:'3600s'
   };
   const user = `user${__VU}`;
-  const host = 8000 + (__VU%3);
+  const host = 8000 + (__VU%3); //change the VU number accroding to how much server need to be test
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
   
