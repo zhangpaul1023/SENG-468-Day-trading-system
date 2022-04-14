@@ -193,7 +193,7 @@ def cancel_set_sell(request, userid, stock_symbol):
 		return HttpResponse("success")
 def display_summary(request, userid):
 	user = User.objects.get(userid=userid)
-	UserCommandLog(transaction_num=user.transaction_num,server=gethostname(), user=user, command='DISPLAY_SUMMARY', stock_symbol=stock_symbol).save()
+	UserCommandLog(transaction_num=user.transaction_num,server=gethostname(), user=user, command='DISPLAY_SUMMARY').save()
 	return HttpResponse(user.display_summary())
 def dumplog(request):
 	# my_str = ''
