@@ -23,7 +23,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/add/${user}/45016.23/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
-  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
+  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
   http.get(`http://localhost:${host}/transactions/add/${user}/71879.98/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/303.83/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
@@ -41,7 +41,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/575.27/`); 
   http.get(`http://localhost:${host}/transactions/cancel_sell/${user}/`); 
-  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
+  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
   http.get(`http://localhost:${host}/transactions/set_buy_amount/${user}/${symbol}/658.38/`); 
   http.get(`http://localhost:${host}/transactions/sell/${user}/${symbol}/641.90/`); 
   http.get(`http://localhost:${host}/transactions/commit_sell/${user}/`); 
@@ -54,12 +54,12 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/657.49/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
-  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
+  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/710.47/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/208.11/`); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`); 
-  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
+  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
   http.get(`http://localhost:${host}/transactions/add/${user}/52802.93/`); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/433.22/`); 
   http.get(`http://localhost:${host}/transactions/set_sell_trigger/${user}/${symbol}/59.23/`); 
@@ -70,7 +70,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/commit_sell/${user}/`); 
   http.get(`http://localhost:${host}/transactions/cancel_set_buy/${user}/${symbol}/`); 
   http.get(`http://localhost:${host}/transactions/cancel_set_buy/${user}/${symbol}/`); 
-  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
+  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`); 
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`); 
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`); 
   http.get(`http://localhost:${host}/transactions/sell/${user}/${symbol}/429.74/`); 
