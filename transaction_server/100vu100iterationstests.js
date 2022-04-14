@@ -13,7 +13,7 @@ export default function () {
 	  timeout:'3600s'
   };
   const user = `user${__VU}`;
-  const host = 8000 + (__VU%3);
+  const host = 8000 + (__VU%3); //change the VU number accroding to how much server need to be test
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
   
