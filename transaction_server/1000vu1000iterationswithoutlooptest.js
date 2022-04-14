@@ -1,4 +1,5 @@
 import http from 'k6/http';
+//test it without cache
 
 export default function () {
   function randomSymbol() {
@@ -15,13 +16,8 @@ export default function () {
   const host = 8000 + (__VU%3);
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const symbol = `${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}${alphabet[Math.floor(Math.random() * alphabet.length)]}`;
-  
-  for (;;){
-	  var res = http.get(`http://localhost:${host}/transactions/create_user/${user}/`,params); 
-  	  if (res.status != 408 && res.status < 500) {
-	  	break;
-	  }
-  }
+
+  http.get(`http://localhost:${host}/transactions/create_user/${user}/`,params);
   http.get(`http://localhost:${host}/transactions/add/${user}/63511.53/`,params); 
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/276.83/`,params); 
@@ -32,7 +28,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/add/${user}/45016.23/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
-  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); 
+  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); //System lagging if process the display_summary
   http.get(`http://localhost:${host}/transactions/add/${user}/71879.98/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/303.83/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
@@ -50,7 +46,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/575.27/`,params); 
   http.get(`http://localhost:${host}/transactions/cancel_sell/${user}/`,params); 
-  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); 
+  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); //System lagging if process the display_summary
   http.get(`http://localhost:${host}/transactions/set_buy_amount/${user}/${symbol}/658.38/`,params); 
   http.get(`http://localhost:${host}/transactions/sell/${user}/${symbol}/641.90/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_sell/${user}/`,params); 
@@ -63,12 +59,12 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/657.49/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
-  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); 
+  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); //System lagging if process the display_summary
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/710.47/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/208.11/`,params); 
   http.get(`http://localhost:${host}/transactions/commit_buy/${user}/`,params); 
-  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); 
+  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); //System lagging if process the display_summary
   http.get(`http://localhost:${host}/transactions/add/${user}/52802.93/`,params); 
   http.get(`http://localhost:${host}/transactions/buy/${user}/${symbol}/433.22/`,params); 
   http.get(`http://localhost:${host}/transactions/set_sell_trigger/${user}/${symbol}/59.23/`,params); 
@@ -79,7 +75,7 @@ export default function () {
   http.get(`http://localhost:${host}/transactions/commit_sell/${user}/`,params); 
   http.get(`http://localhost:${host}/transactions/cancel_set_buy/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/cancel_set_buy/${user}/${symbol}/`,params); 
-  http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); 
+  //http.get(`http://localhost:${host}/transactions/display_summary/${user}/`,params); //System lagging if process the display_summary
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/quote/${user}/${symbol}/`,params); 
   http.get(`http://localhost:${host}/transactions/sell/${user}/${symbol}/429.74/`,params); 
