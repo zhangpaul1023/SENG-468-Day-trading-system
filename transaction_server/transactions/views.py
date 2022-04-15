@@ -10,7 +10,9 @@ from .models import *
 from datetime import datetime, timezone
 from decimal import *
 
-
+# A corresponding view is created for every command in the requirements specification.
+# Each view will attempt to create a model object corresponding to that command.
+# If the model object is successfully created, the view will return "success".
 
 def create_user(request, userid):
 	try:

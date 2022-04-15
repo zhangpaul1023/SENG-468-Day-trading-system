@@ -41,5 +41,22 @@ You can tear the application down
 
     $ docker-compose down
 
+## Testing
+Load tests can be found in the `testing_script/` folder. These can be run using [k6](https://k6.io/).
 
+## Contributing
 
+The bulk of the transaction server's functionality is written in the `transaction_server/transactions/` folder.
+This is the location of the `transactions` Django app:
+
+- `models.py` includes database schema information and business logic.
+- `urls.py` includes a list of available views.
+- `views.py` includes request handlers.
+- `management/check_triggers.py` includes Celery logic.
+- `../transaction_server/settings.py` includes initialization behaviour and application global constants.
+
+Most other files are created by Django's command-line utility. Read up on [Django](https://docs.djangoproject.com/en/4.0/) before attempting to change them.
+
+### Undesirable Design Artifacts
+- `init.sql` is required to initialize a PostgreSQL without multiple restarts.
+- The Django web service, Celery, and Celery Beat all use the same Docker image.

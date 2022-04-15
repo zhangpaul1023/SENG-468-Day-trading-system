@@ -9,6 +9,12 @@ import redis
 import socket
 from socket import gethostname
 
+# All application models are defined in this file.
+# Most of the models defined in this file are transactions.
+# Every transaction is associated with a User object.
+# Most transactions also extend the Log class, allowing for XML serialization.
+
+# Connect to Redis cache.
 redis_instance = redis.StrictRedis(
 	host=settings.REDIS_HOST,
 	port=settings.REDIS_PORT,
@@ -19,6 +25,7 @@ redis_instance = redis.StrictRedis(
 def cancel_if_not_none(item):
 	if item != None: item.cancel()
 
+# User object identifies the user and keeps track of their funds.
 class User(models.Model):
 	userid = models.CharField(max_length=64)
 	funds = models.DecimalField(decimal_places=2, max_digits=24, default=Decimal(0.0))
@@ -35,6 +42,9 @@ class User(models.Model):
 		self.save()
 		AccountTransactionLog(server=gethostname(), user=self, actions='REMOVE', funds=amount, transaction_num=self.transaction_num).save()
 
+	# Quotes are only valid for 30 seconds.
+	# If a quote has expired from the cache, it will be fetched from the quote server.
+	# Else, it can be fetched from the cache.
 	def get_quote(self, stock_symbol):
 		
 		cached_quote = redis_instance.get(stock_symbol)
@@ -152,6 +162,7 @@ class User(models.Model):
 		self.transaction_num += 1
 		self.save()
 
+# A stock account is created for every unique stock symbol a user has.
 class StockAccount(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	stock_symbol = models.CharField(max_length=3)
@@ -263,7 +274,7 @@ class SetSell(SetTransaction):
 	def __str__(self):
 		return '{user} has set sell of ${amount} worth of {symbol} that will trigger when {symbol} = {trigger}'.format(user=self.user.userid, amount=self.funds, symbol=self.stock_symbol, trigger=self.triggerAmount)
 
-# Create your models here.
+# Commands are directly serializable into a log.
 class Command(models.TextChoices):
 		ADD = 'ADD'
 		QUOTE = 'QUOTE'
